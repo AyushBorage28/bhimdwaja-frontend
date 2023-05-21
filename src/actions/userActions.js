@@ -26,10 +26,11 @@ import {
   USER_UPDATE_REQUEST,
 } from '../constants/userConstants'
 import { ORDER_LIST_MY_RESET } from '../constants/orderConstants'
+import { SERVER_URL } from '../config'
 
 export const login = (phone, redirectOnSuccess) => async (dispatch) => {
   try {
-    
+
 
     const config = {
       headers: {
@@ -38,7 +39,7 @@ export const login = (phone, redirectOnSuccess) => async (dispatch) => {
     }
 
     const { data } = await axios.post(
-      '/api/users/login',
+      `${SERVER_URL}/users/login`,
       { phone },
       config
     )
@@ -51,14 +52,14 @@ export const login = (phone, redirectOnSuccess) => async (dispatch) => {
     localStorage.setItem('userInfo', JSON.stringify(data))
     redirectOnSuccess()
   } catch (error) {
-      dispatch({
-        type: USER_LOGIN_FAIL,
-        payload:
-          error.response && error.response.data.message
-            ? error.response.data.message
-            : error.message,
-      })
-    
+    dispatch({
+      type: USER_LOGIN_FAIL,
+      payload:
+        error.response && error.response.data.message
+          ? error.response.data.message
+          : error.message,
+    })
+
   }
 }
 
@@ -75,7 +76,7 @@ export const login = (phone, redirectOnSuccess) => async (dispatch) => {
 //     }
 
 //     const { data } = await axios.post(
-//       '/api/users/finduser',
+//       '${SERVER_URL}/users/finduser',
 //       { phone },
 //       config
 //     )
@@ -110,7 +111,7 @@ export const verifyUser = (phone, otp, redirectOnSuccess) => async (dispatch) =>
       },
     }
     const { data } = await axios.post(
-      '/api/users/verifyotp',
+      `${SERVER_URL}/users/verifyotp`,
       { phone, otp },
       config
     )
@@ -121,7 +122,7 @@ export const verifyUser = (phone, otp, redirectOnSuccess) => async (dispatch) =>
       payload: data,
     })
     redirectOnSuccess();
-    
+
   } catch (error) {
     console.log(error)
     dispatch({
@@ -147,7 +148,7 @@ export const findUser = (phone, redirectOnSuccess) => async (dispatch) => {
     }
 
     const { data } = await axios.post(
-      '/api/users/finduser',
+      `${SERVER_URL}/users/finduser`,
       { phone },
       config
     )
@@ -183,7 +184,7 @@ export const updatePassword = (phone, password, redirectOnSuccess) => async (dis
     }
 
     const { data } = await axios.post(
-      '/api/users/forgotpassword',
+      `${SERVER_URL}/users/forgotpassword`,
       { phone, password },
       config
     )
@@ -234,7 +235,7 @@ export const register = (name, email, phone, password, redirectOnSuccess) => asy
     }
 
     const { data } = await axios.post(
-      '/api/users',
+      `${SERVER_URL}/users`,
       { name, email, phone, password },
       config
     )
@@ -280,7 +281,7 @@ export const getUserDetails = (id) => async (dispatch, getState) => {
       },
     }
 
-    const { data } = await axios.get(`/api/users/${id}`, config)
+    const { data } = await axios.get(`${SERVER_URL}/users/${id}`, config)
 
     dispatch({
       type: USER_DETAILS_SUCCESS,
@@ -318,7 +319,7 @@ export const updateUserProfile = (user) => async (dispatch, getState) => {
       },
     }
 
-    const { data } = await axios.put(`/api/users/profile`, user, config)
+    const { data } = await axios.put(`${SERVER_URL}/users/profile`, user, config)
 
     dispatch({
       type: USER_UPDATE_PROFILE_SUCCESS,
@@ -360,7 +361,7 @@ export const listUsers = () => async (dispatch, getState) => {
       },
     }
 
-    const { data } = await axios.get(`/api/users`, config)
+    const { data } = await axios.get(`${SERVER_URL}/users`, config)
 
     dispatch({
       type: USER_LIST_SUCCESS,
@@ -397,7 +398,7 @@ export const deleteUser = (id) => async (dispatch, getState) => {
       },
     }
 
-    await axios.delete(`/api/users/${id}`, config)
+    await axios.delete(`${SERVER_URL}/users/${id}`, config)
 
     dispatch({ type: USER_DELETE_SUCCESS })
   } catch (error) {
@@ -432,7 +433,7 @@ export const updateUser = (user) => async (dispatch, getState) => {
       },
     }
 
-    const { data } = await axios.put(`/api/users/${user._id}`, user, config)
+    const { data } = await axios.put(`${SERVER_URL}/users/${user._id}`, user, config)
 
     dispatch({ type: USER_UPDATE_SUCCESS })
 

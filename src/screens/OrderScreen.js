@@ -16,6 +16,7 @@ import {
   ORDER_DELIVER_RESET,
 } from '../constants/orderConstants'
 import useScrollToTop from '../components/ScrollToTop'
+import { SERVER_URL } from './../config'
 
 
 const OrderScreen = ({ match, history }) => {
@@ -55,7 +56,7 @@ const OrderScreen = ({ match, history }) => {
     }
 
     const addPayPalScript = async () => {
-      const { data: clientId } = await axios.get('/api/config/paypal')
+      const { data: clientId } = await axios.get(`${SERVER_URL}/config/paypal`)
       const script = document.createElement('script')
       script.type = 'text/javascript'
       script.src = `https://securegw-stage.paytm.in/merchantpgpui/checkoutjs/merchants/${clientId}.js`
