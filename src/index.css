@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container,.Container{
+  max-width: 100%;
+}
+
+main {
+  min-height: 80vh;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+/* carousel */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+.carousel-caption {
+  position: absolute;
+  top: 0;
+}
+
+.carousel-caption h2 {
+  color: #fff;
+}
+
+.carousel img {
+ 
+  margin-left: 0;
+  margin-right: 0;
+}
+.carousel a {
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .carousel-caption h2 {
+    font-size: 2.5vw;
+  }
+}
+
+#basic-nav-dropdown, #username{
+  color: black;
+}
+
+.fa-shopping-cart{
+  color: black;
+}
+
+.cart-text{
+  color: black !important;
+}
+
+.signin-text{
+  color: black !important;
+}
+
+.card{
+  height: 85%;
+}
+
+.img-wrapper {
+  overflow: hidden;
+}
+
+.hover-zoom:hover{
+  transform: scale(1.06);
+}
+
+.category-link a:hover{
+  color: #f4791a;
+}
+
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.otpContainer {
+  margin: 5% auto;
+}
+ 
+.otpInput {
+  width: 3rem !important;
+  height: 3rem;
+  margin: 0 1rem;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top:hover{
+  transform: scale(1.05);
+  color: #f4791a ;
+}
+
+.homepage-card:hover{
+  transform: scale(1.05);
+  color: #f4791a ;
+}
+
+.category-card:hover{
+  transform: none;
+}
+
+
+.homepage-card{
+  width: 200px;
+  margin: auto;
+  align-items: center;
+}
+
+.top-product-card{
+  width: 200px;
+  margin: auto;
+}
+
+.list-unstyled  li > a{
+  text-decoration: none;
+}
+
+.list-unstyled  li > a:hover{
+  color: #f4791a;
+}
+
+.footer-name:hover{
+  color: #f4791a;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
