@@ -8,7 +8,7 @@ import {
 import { SERVER_URL } from '../config'
 
 export const addToCart = (id, qty) => async (dispatch, getState) => {
-  const { data } = await axios.get(`${SERVER_URL}products/${id}`)
+  const { data } = await axios.get(`${SERVER_URL}/apiproducts/${id}`)
 
   dispatch({
     type: CART_ADD_ITEM,

@@ -70,7 +70,7 @@ const ProductEditScreen = ({ match, history }) => {
         },
       }
 
-      const { data } = await axios.post(`${SERVER_URL}/upload`, formData, config)
+      const { data } = await axios.post(`${SERVER_URL}/api/upload`, formData, config)
 
       setImage(data)
       setUploading(false)

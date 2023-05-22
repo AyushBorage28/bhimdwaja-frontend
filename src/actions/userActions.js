@@ -39,7 +39,7 @@ export const login = (phone, redirectOnSuccess) => async (dispatch) => {
     }
 
     const { data } = await axios.post(
-      `${SERVER_URL}/users/login`,
+      `${SERVER_URL}/api/users/login`,
       { phone },
       config
     )
@@ -111,7 +111,7 @@ export const verifyUser = (phone, otp, redirectOnSuccess) => async (dispatch) =>
       },
     }
     const { data } = await axios.post(
-      `${SERVER_URL}/users/verifyotp`,
+      `${SERVER_URL}/api/users/verifyotp`,
       { phone, otp },
       config
     )
@@ -148,7 +148,7 @@ export const findUser = (phone, redirectOnSuccess) => async (dispatch) => {
     }
 
     const { data } = await axios.post(
-      `${SERVER_URL}/users/finduser`,
+      `${SERVER_URL}/api/users/finduser`,
       { phone },
       config
     )
@@ -184,7 +184,7 @@ export const updatePassword = (phone, password, redirectOnSuccess) => async (dis
     }
 
     const { data } = await axios.post(
-      `${SERVER_URL}/users/forgotpassword`,
+      `${SERVER_URL}/api/users/forgotpassword`,
       { phone, password },
       config
     )
@@ -235,7 +235,7 @@ export const register = (name, email, phone, password, redirectOnSuccess) => asy
     }
 
     const { data } = await axios.post(
-      `${SERVER_URL}/users`,
+      `${SERVER_URL}/api/users`,
       { name, email, phone, password },
       config
     )
@@ -281,7 +281,7 @@ export const getUserDetails = (id) => async (dispatch, getState) => {
       },
     }
 
-    const { data } = await axios.get(`${SERVER_URL}/users/${id}`, config)
+    const { data } = await axios.get(`${SERVER_URL}/api/users/${id}`, config)
 
     dispatch({
       type: USER_DETAILS_SUCCESS,
@@ -319,7 +319,7 @@ export const updateUserProfile = (user) => async (dispatch, getState) => {
       },
     }
 
-    const { data } = await axios.put(`${SERVER_URL}/users/profile`, user, config)
+    const { data } = await axios.put(`${SERVER_URL}/api/users/profile`, user, config)
 
     dispatch({
       type: USER_UPDATE_PROFILE_SUCCESS,
@@ -361,7 +361,7 @@ export const listUsers = () => async (dispatch, getState) => {
       },
     }
 
-    const { data } = await axios.get(`${SERVER_URL}/users`, config)
+    const { data } = await axios.get(`${SERVER_URL}/api/users`, config)
 
     dispatch({
       type: USER_LIST_SUCCESS,
@@ -398,7 +398,7 @@ export const deleteUser = (id) => async (dispatch, getState) => {
       },
     }
 
-    await axios.delete(`${SERVER_URL}/users/${id}`, config)
+    await axios.delete(`${SERVER_URL}/api/users/${id}`, config)
 
     dispatch({ type: USER_DELETE_SUCCESS })
   } catch (error) {
@@ -433,7 +433,7 @@ export const updateUser = (user) => async (dispatch, getState) => {
       },
     }
 
-    const { data } = await axios.put(`${SERVER_URL}/users/${user._id}`, user, config)
+    const { data } = await axios.put(`${SERVER_URL}/api/users/${user._id}`, user, config)
 
     dispatch({ type: USER_UPDATE_SUCCESS })
 
