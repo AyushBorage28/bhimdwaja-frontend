@@ -1,1 +1,1 @@
-export const SERVER_URL = "http://44.203.157.160:5000"
+export const SERVER_URL = "https://api.bhimdhwaja.in"

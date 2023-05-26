@@ -1,6 +1,6 @@
 {
   "name": "frontend",
-  "proxy": "http://44.203.157.160:5000",
+  "proxy": "https://api.bhimdhwaja.in",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

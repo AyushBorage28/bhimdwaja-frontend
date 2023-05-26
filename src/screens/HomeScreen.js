@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { Card, CardDeck } from 'react-bootstrap'
-import Product from '../components/Product'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import ProductCarousel from '../components/ProductCarousel'
@@ -49,7 +47,7 @@ const HomeScreen = ({ match }) => {
           <div class="card-group">
             <div class="card" className='homepage-card category-card'>
               <a href='/category/one-mukhi'>
-                <img class="card-img-top" src="././images/rudraksha.png" alt="Card image cap" href='/category/one-mukhi' />
+                <img class="card-img-top" src="././images/rudraksha.png" alt="Card cap" href='/category/one-mukhi' />
               </a>
               <div class="card-body">
                 <h5 class="card-title" className='text-center' style={{ fontSize: "20px" }}>Rudraksha</h5>
