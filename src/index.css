@@ -99,7 +99,11 @@ h2 {
   color: #f4791a;
 }
 
-
+@media screen and (max-width: 767px) {
+.main-navbar{
+  padding: 0.3rem 1rem;
+}
+}
 
 
 .otpContainer {
@@ -134,12 +138,32 @@ h2 {
   transform: none;
 }
 
-
-.homepage-card{
-  width: 200px;
-  margin: auto;
-  align-items: center;
+.category-card{
+width: 20rem;
+/* border: 1px solid #25d366 ; */
 }
+
+.card-title,.card-body{
+  text-align: center;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .card-title,.card-body{
+    font-size: 0.5rem;
+  }
+  .title-rudraksha{
+    margin-left: -10px;
+  }
+}
+
+.row{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
 
 .top-product-card{
   width: 200px;

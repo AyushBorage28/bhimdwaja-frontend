@@ -45,66 +45,94 @@ const HomeScreen = ({ match }) => {
       ) : (
         <>
           <div class="card-group">
-            <div class="card" className='homepage-card category-card'>
-              <a href='/category/one-mukhi'>
-                <img class="card-img-top" src="././images/rudraksha.png" alt="Card cap" href='/category/one-mukhi' />
-              </a>
-              <div class="card-body">
-                <h5 class="card-title" className='text-center' style={{ fontSize: "20px" }}>Rudraksha</h5>
-              </div>
-            </div>
-            <div class="card" className='homepage-card category-card'>
-              <a href='/category/gem'>
-                <img class="card-img-top" src="././images/gem.png" alt="Card cap" />
-              </a>
-              <div class="card-body">
-                <h5 class="card-title" className='text-center' style={{ fontSize: "20px" }}>Gems</h5>
-              </div>
-            </div>
-            <div class="card" className='homepage-card category-card'>
-              <a href='/category/mala'>
-                <img class="card-img-top" src="././images/mala.png" alt="Card cap" />
-              </a>
-              <div class="card-body">
-                <h5 class="card-title" className='text-center' style={{ fontSize: "20px" }}>Mala</h5>
-              </div>
-            </div>
+            <div className='row' >
 
-          </div>
-
-          <h1 className='text-center pt-4'>Top 5 Best-Selling Rudraksha</h1>
-          <div class="card-group">
-            <div class="card" className='homepage-card'>
-              <img class="card-img-top" src="././images/5-Mukhi-Rudraksha.png" alt="Card image cap" href="" />
-              <div class="card-body">
-                <h5 class="card-title homepage-card-title" style={{ fontSize: "12px" }}>5 Mukhi Rudraksha</h5>
+              <div class="card" className=' category-card col-4'>
+                <a href='/category/gem'>
+                  <img class="card-img-top" src="././images/gem.png" alt="Card cap" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title" >Gems</h5>
+                </div>
               </div>
-            </div>
-            <div class="card" className='homepage-card'>
-              <img class="card-img-top" src="././images/2-Mukhi-Rudraksha.png" alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title homepage-card-title" style={{ fontSize: "12px" }}>2 Mukhi Rudraksha</h5>
+              <div class="card  " className='category-card col-4'>
+                <a href='/category/one-mukhi'>
+                  <img class="card-img-top" src="././images/rudraksha.png" alt="Card cap" href='/category/one-mukhi' />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title title-rudraksha" >Rudraksha</h5>
+                </div>
               </div>
-            </div>
-            <div class="card" className='homepage-card'>
-              <img class="card-img-top" src="././images/2-Mukhi-Rudraksha.png" alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title homepage-card-title" style={{ fontSize: "12px" }}>2 Mukhi Rudraksha</h5>
-              </div>
-            </div>
-            <div class="card" className='homepage-card'>
-              <img class="card-img-top" src="././images/5-Mukhi-Rudraksha.png" alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title homepage-card-title" style={{ fontSize: "12px", marginLeft: "5px" }}>5 Mukhi Rudraksha</h5>
-              </div>
-            </div>
-            <div class="card" className='homepage-card'>
-              <img class="card-img-top" src="././images/5-Mukhi-Rudraksha.png" alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title homepage-card-title" style={{ fontSize: "12px", marginLeft: "5px" }}>5 Mukhi Rudraksha</h5>
+              <div class="card " className=' category-card col-4'>
+                <a href='/category/mala'>
+                  <img class="card-img-top" src="././images/mala.png" alt="Card cap" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Mala</h5>
+                </div>
               </div>
             </div>
           </div>
+
+
+
+
+
+          <h1 className='text-center pt-4'>Our Best-Selling Rudraksha</h1>
+          {/* <div class="card-group">
+            <div className='row' >
+
+              <div class="card" className=' category-card col-2'>
+                <a href='/category/gem'>
+                  <img class="card-img-top" src="././images/5-Mukhi-Rudraksha.png" alt="Card cap" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title" >Gems</h5>
+                </div>
+              </div>
+              <div class="card" className=' category-card col-2'>
+                <a href='/category/gem'>
+                  <img class="card-img-top" src="././images/5-Mukhi-Rudraksha.png" alt="Card cap" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title" >Gems</h5>
+                </div>
+              </div>
+              <div class="card" className=' category-card col-2'>
+                <a href='/category/gem'>
+                  <img class="card-img-top" src="././images/5-Mukhi-Rudraksha.png" alt="Card cap" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title" >Gems</h5>
+                </div>
+              </div>
+              <div class="card" className=' category-card col-2'>
+                <a href='/category/gem'>
+                  <img class="card-img-top" src="././images/5-Mukhi-Rudraksha.png" alt="Card cap" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title" >Gems</h5>
+                </div>
+              </div>
+              <div class="card" className=' category-card col-2'>
+                <a href='/category/gem'>
+                  <img class="card-img-top" src="././images/5-Mukhi-Rudraksha.png" alt="Card cap" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title" >Gems</h5>
+                </div>
+              </div>
+              <div class="card" className=' category-card col-2'>
+                <a href='/category/gem'>
+                  <img class="card-img-top" src="././images/5-Mukhi-Rudraksha.png" alt="Card cap" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title" >Gems</h5>
+                </div>
+              </div>
+             
+            </div>
+          </div> */}
 
           <FAQsScreen />
         </>
