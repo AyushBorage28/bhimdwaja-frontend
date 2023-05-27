@@ -55,7 +55,7 @@ const HomeScreen = ({ match }) => {
             </div>
             <div class="card" className='homepage-card category-card'>
               <a href='/category/gem'>
-                <img class="card-img-top" src="././images/gem.png" alt="Card image cap" />
+                <img class="card-img-top" src="././images/gem.png" alt="Card cap" />
               </a>
               <div class="card-body">
                 <h5 class="card-title" className='text-center' style={{ fontSize: "20px" }}>Gems</h5>
@@ -63,7 +63,7 @@ const HomeScreen = ({ match }) => {
             </div>
             <div class="card" className='homepage-card category-card'>
               <a href='/category/mala'>
-                <img class="card-img-top" src="././images/mala.png" alt="Card image cap" />
+                <img class="card-img-top" src="././images/mala.png" alt="Card cap" />
               </a>
               <div class="card-body">
                 <h5 class="card-title" className='text-center' style={{ fontSize: "20px" }}>Mala</h5>

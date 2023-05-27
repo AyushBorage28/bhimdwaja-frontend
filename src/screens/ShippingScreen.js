@@ -72,7 +72,6 @@ const ShippingScreen = ({ history }) => {
           <Form.Label>City</Form.Label>
           <Form.Control
             type='text'
-            disabled
             placeholder='Enter city'
             value={city}
             required
@@ -86,7 +85,6 @@ const ShippingScreen = ({ history }) => {
           <Form.Label>State</Form.Label>
           <Form.Control
             type='text'
-            disabled
             placeholder='Enter state'
             value={state}
             required
