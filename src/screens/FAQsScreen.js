@@ -18,7 +18,7 @@ const FAQsScreen = () => {
 
                                 The association of Rudraksha with Hinduism dates back thousands of years, and it has played a pivotal role in various religious practices. In ancient texts, such as the Puranas and Upanishads, Rudraksha is mentioned as a divine gift bestowed upon humanity by Lord Shiva himself.
 
-                                Rudraksha is not merely a seed but a powerful symbol of spirituality, devotion, and holistic well-being. Its origins in the Himalayan region, sacred significance in Hinduism, and diverse benefits make it a cherished and revered element in the lives of millions of people around the world.</Card.Body>
+                               </Card.Body>
                         </Accordion.Collapse>
                     </Card>
                     <Card>
@@ -28,7 +28,7 @@ const FAQsScreen = () => {
                         <Accordion.Collapse eventKey="1">
                             <Card.Body className='faqs-body-text'>Wearing Rudraksha beads has been attributed to a multitude of benefits that extend beyond their spiritual significance. These mystical seeds have gained popularity for their potential positive impact on various aspects of an individual's well-being. One of the key advantages associated with Rudraksha is its ability to enhance concentration and focus. Many practitioners believe that wearing Rudraksha beads close to the skin stimulates the mind and promotes clarity of thought, making it a favored accessory during meditation and study sessions.
 
-                                In addition to its mental and emotional benefits, Rudraksha is also believed to positively impact physical health. The beads are thought to improve blood circulation, which plays a vital role in maintaining overall well-being. Furthermore, the beads are considered to have a rejuvenating effect on the body, potentially boosting vitality and energy levels.</Card.Body>
+                                </Card.Body>
                         </Accordion.Collapse>
                     </Card>
                     <Card>
@@ -38,7 +38,7 @@ const FAQsScreen = () => {
                         <Accordion.Collapse eventKey="2">
                             <Card.Body className='faqs-body-text'>Gems, those exquisite natural minerals and stones renowned for their captivating beauty, have captivated humanity for centuries. These precious treasures, found deep within the Earth's crust, hold immense value not only for their aesthetic allure but also for their perceived healing and therapeutic properties.
 
-                                Gemstones have been cherished and utilized in jewelry-making across various cultures and civilizations throughout history. Their allure lies in their vibrant colors, unique patterns, and remarkable optical properties that create an enchanting play of light. From the mesmerizing blues of sapphires to the fiery reds of rubies, the kaleidoscope of gemstone hues offers an endless array of options to adorn oneself with elegance and style.</Card.Body>
+                                </Card.Body>
                         </Accordion.Collapse>
                     </Card>
                     <Card>
@@ -54,9 +54,7 @@ const FAQsScreen = () => {
                             What is a Rudraksha Mala?
                         </Accordion.Toggle>
                         <Accordion.Collapse eventKey="4">
-                            <Card.Body className='faqs-body-text'>A Rudraksha Mala holds a significant place in spiritual practices, serving as a powerful tool for prayer and meditation. Consisting of a string of Rudraksha beads, this sacred accessory is commonly worn around the neck or wrapped around the wrist, symbolizing devotion and spiritual connection.
-
-                                The Rudraksha beads strung together on the mala are carefully selected based on their mukhi or face pattern, each associated with a specific deity or energy. The number of beads in a Rudraksha mala can vary, with commonly used counts being 108 or 54 beads, although other numbers are also prevalent.</Card.Body>
+                            <Card.Body className='faqs-body-text'>A Rudraksha Mala holds a significant place in spiritual practices, serving as a powerful tool for prayer and meditation. Consisting of a string of Rudraksha beads, this sacred accessory is commonly worn around the neck or wrapped around the wrist, symbolizing devotion and spiritual connection. The number of beads in a Rudraksha mala can vary, with commonly used counts being 108 or 54 beads, although other numbers are also prevalent.</Card.Body>
                         </Accordion.Collapse>
                     </Card>
                     <Card>
