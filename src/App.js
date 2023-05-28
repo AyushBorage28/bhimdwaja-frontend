@@ -34,7 +34,7 @@ const App = () => {
     <CategoryContext.Provider value={{ selectedCategory, setSelectedCategory }}>
       <Router>
         <Header />
-        <main className="py-3">
+        <main className={window.location.pathname === "/" ? "" : "py-3"}>
           <Container>
             <Route path="/order/:id" component={OrderScreen} />
             <Route path="/shipping" component={ShippingScreen} />
@@ -70,17 +70,17 @@ const App = () => {
               path="/admin/product/:id/edit"
               component={ProductEditScreen}
             />
-            <Route path="/admin/orderlist" component={OrderListScreen} />
-            <Route path="/search/:keyword" component={HomeScreen} exact/>
+            <Route path="/admin/orderlist" component={OrderListScreen} />            
+          </Container>
+          
+          <Route path="/search/:keyword" component={HomeScreen} exact/>
             <Route path="/page/:pageNumber" component={HomeScreen} exact />
             <Route
               path="/search/:keyword/page/:pageNumber"
               component={HomeScreen}
-              exact
-           
+              exact        
             />
             <Route path="/" component={HomeScreen} exact  />
-          </Container>
         </main>
         <Footer />
       </Router>

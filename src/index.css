@@ -169,6 +169,10 @@ justify-content: center;
   .title-rudraksha{
     margin-left: -10px;
   }
+  .faqs-container{
+    font-weight: 400;
+    font-size: medium;
+  }
 }
 
 .row{
@@ -219,9 +223,15 @@ justify-content: center;
 
 .faqs-body-text{
   font-weight: 200;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .card-header{
   background-color: #ffffff;
+}
+
+
+.accordion>.card>.card-header, .accordion>.card>.card-body{
+  display: flex;
+  justify-content: center;
 }

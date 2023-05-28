@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar style={{ backgroundColor: "#56201c" }} variant='dark' className='py-2'>
+      <Navbar style={{ backgroundColor: "#B87333" }} variant='dark' className='py-2'>
         <Container>
           <Nav className='ml-auto'>
             <Button variant="light" href='/customization' size="sm" active>Our Customization</Button>{' '}
