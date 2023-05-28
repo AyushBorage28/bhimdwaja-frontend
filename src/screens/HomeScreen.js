@@ -77,60 +77,50 @@ const HomeScreen = ({ match }) => {
 
 
           <h1 className='text-center pt-4'>Our Best-Selling Rudraksha</h1>
-          {/* <div class="card-group">
-            <div className='row' >
-
-              <div class="card" className=' category-card col-2'>
+          <div class="card-group" className='best-selling-card-grp'>
+              <div class="card" className='best-selling-card '>
                 <a href='/category/gem'>
-                  <img class="card-img-top" src="././images/5-Mukhi-Rudraksha.png" alt="Card cap" />
+                  <img class="card-img-top" src="././images/gaurishankar.png" alt="Card cap" />
                 </a>
-                <div class="card-body">
-                  <h5 class="card-title" >Gems</h5>
-                </div>
+                
+                  <h4 class="card-title" >gauri <br></br> shankar</h4>
+                
               </div>
-              <div class="card" className=' category-card col-2'>
+              <div class="card" className='best-selling-card'>
                 <a href='/category/gem'>
-                  <img class="card-img-top" src="././images/5-Mukhi-Rudraksha.png" alt="Card cap" />
+                  <img class="card-img-top" src="././images/6mukhi.png" alt="Card cap" />
                 </a>
-                <div class="card-body">
-                  <h5 class="card-title" >Gems</h5>
-                </div>
+                
+                  <h4 class="card-title" >savar</h4>
+             
               </div>
-              <div class="card" className=' category-card col-2'>
+              <div class="card" className='best-selling-card '>
                 <a href='/category/gem'>
-                  <img class="card-img-top" src="././images/5-Mukhi-Rudraksha.png" alt="Card cap" />
+                  <img class="card-img-top" src="././images/ganesh.png" alt="Card cap" />
                 </a>
-                <div class="card-body">
-                  <h5 class="card-title" >Gems</h5>
-                </div>
+              
+                  <h4 class="card-title" >ganesh</h4>
+           
               </div>
-              <div class="card" className=' category-card col-2'>
+              <div class="card" className='best-selling-card '>
                 <a href='/category/gem'>
-                  <img class="card-img-top" src="././images/5-Mukhi-Rudraksha.png" alt="Card cap" />
+                  <img class="card-img-top" src="././images/6mukhi.png" alt="Card cap" />
                 </a>
-                <div class="card-body">
-                  <h5 class="card-title" >Gems</h5>
-                </div>
+           
+                  <h4 class="card-title" >6 mukhi</h4>
+               
               </div>
-              <div class="card" className=' category-card col-2'>
+              <div class="card" className='best-selling-card  '>
                 <a href='/category/gem'>
-                  <img class="card-img-top" src="././images/5-Mukhi-Rudraksha.png" alt="Card cap" />
+                  <img class="card-img-top" src="././images/11mukhi.png" alt="Card cap" />
                 </a>
-                <div class="card-body">
-                  <h5 class="card-title" >Gems</h5>
-                </div>
-              </div>
-              <div class="card" className=' category-card col-2'>
-                <a href='/category/gem'>
-                  <img class="card-img-top" src="././images/5-Mukhi-Rudraksha.png" alt="Card cap" />
-                </a>
-                <div class="card-body">
-                  <h5 class="card-title" >Gems</h5>
-                </div>
+              
+                  <h4 class="card-title" >11 mukhi</h4>
+         
               </div>
              
             </div>
-          </div> */}
+       
 
           <FAQsScreen />
         </>

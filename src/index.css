@@ -99,6 +99,7 @@ h2 {
 .main-navbar{
   padding: 0.5rem 1rem;
 }
+
 }
 
 
@@ -125,19 +126,36 @@ h2 {
   color: #f4791a ;
 }
 
-.homepage-card:hover{
-  transform: scale(1.05);
-  color: #f4791a ;
-}
 
-.category-card:hover{
-  transform: none;
-}
 
 .category-card{
 width: 20rem;
 /* border: 1px solid #25d366 ; */
 }
+
+.best-selling-card-grp{
+display: flex;
+justify-content: center;
+}
+
+
+.best-selling-card{
+  width: 17rem;
+  /* border: 1px solid #25d366 ; */
+}
+
+.best-selling-card >.card-img-top :hover{
+  transform: none ;
+}
+
+.best-selling-card:hover{
+  color: #f4791a ;
+}
+
+.category-card:hover{
+  color: #f4791a ;
+}
+
 
 .card-title,.card-body{
   text-align: center;
@@ -157,9 +175,6 @@ width: 20rem;
   margin-left: auto;
   margin-right: auto;
 }
-
-
-
 
 .top-product-card{
   width: 200px;
@@ -196,7 +211,6 @@ width: 20rem;
 .my-float{
 	margin-top:16px;
 }
-
 
 .faqs-container{
   font-weight: 400;
