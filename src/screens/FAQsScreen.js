@@ -6,12 +6,9 @@ import { Link } from 'react-router-dom'
 const FAQsScreen = () => {
     return (
         <>
-            <Link to='/' className='btn btn-light my-3'>
-            Go Back
-            </Link>
             <h1 className='text-center pt-4'>Frequently Asked Questions</h1>
 
-            <div className='container w-50 p-3' style={{color: 'black'}}>
+            <div className='container p-3 faqs-container' style={{color: 'black'}}>
             <Accordion defaultActiveKey="0">
                 <Card>
                     <Accordion.Toggle as={Card.Header} eventKey="0">
