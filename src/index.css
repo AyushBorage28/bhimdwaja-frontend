@@ -197,10 +197,17 @@ width: 20rem;
 	margin-top:16px;
 }
 
-.card-header{
-  background-color: #fbf9f9b8;
-}
 
 .faqs-container{
   font-weight: 400;
+  font-size: large;
+}
+
+.faqs-body-text{
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+.card-header{
+  background-color: #ffffff;
 }
