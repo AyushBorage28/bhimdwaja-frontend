@@ -76,8 +76,6 @@ const HomeScreen = ({ match }) => {
 
 
 
-
-
           <h1 className='text-center pt-4'>Our Best-Selling Rudraksha</h1>
           {/* <div class="card-group">
             <div className='row' >
@@ -137,7 +135,7 @@ const HomeScreen = ({ match }) => {
           <FAQsScreen />
         </>
       )}
-    </>
+      </>
   )
 }
 
