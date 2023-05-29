@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Message from '../components/Message';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { USER_VERIFIED } from '../constants/userConstants';
 import { findUser, verifyUser } from '../actions/userActions';
 
@@ -16,6 +16,10 @@ function Otpinput({ history, location }) {
   const [phone, setPhone] = useState();
 
   const dispatch = useDispatch();
+  const userLogin = useSelector((state) => state.userLogin)
+  const { loading, userInfo } = userLogin
+
+  const redirect = location.search ? location.search.split('=')[1] : '/'
 
   useEffect(() => {
     if (
@@ -26,10 +30,14 @@ function Otpinput({ history, location }) {
     ) {
       // TODO: throw some error
     }
+    if (userInfo) {
+      history.push(redirect)
+      window.location.reload()
+    }
 
     const _phone = location.search.split("phone=")[1].split("&")[0];
     setPhone(_phone)
-  }, []);
+  }, [history, userInfo, redirect]);
 
   async function handleSubmit(event) {
     event.preventDefault();
