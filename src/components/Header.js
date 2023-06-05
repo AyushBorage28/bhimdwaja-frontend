@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Route, useHistory } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { LinkContainer } from 'react-router-bootstrap'
-import { Navbar, Nav, Container, NavDropdown} from 'react-bootstrap'
+import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button';
 import SearchBox from './SearchBox'
 import { logout } from '../actions/userActions'
@@ -21,21 +21,27 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar style={{ backgroundColor: "#B87333" }} variant='dark' className='py-2'>
-        <Container>
-          <Nav className='ml-auto'>
-            <Button variant="light" href='/customization' size="sm" active>Our Customization</Button>{' '}
-            <Button variant="light" href='/energization' size="sm" className='ml-3' active>Our Energization</Button>{' '}
+      <Navbar style={{ backgroundColor: "#B87333" }} variant="dark" className="py-2">
+        <Container className="d-flex align-items-center">
+          <p className="m-0" style={{color:'black', fontWeight:'bold'}}>Bhimdwaja | Bhimashankar- Gems and Rudraksha</p>
+          <Nav className="ml-auto">
+            <Button variant="light" href="/customization" size="sm" active>
+              Our Customization
+            </Button>{' '}
+            <Button variant="light" href="/energization" size="sm" className="ml-3" active>
+              Our Energization
+            </Button>{' '}
           </Nav>
         </Container>
       </Navbar>
+
 
       <Navbar style={{ backgroundColor: "#FFe8d6" }} variant='light' expand='lg' collapseOnSelect className='main-navbar'>
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand>
-              <a href=''>
-                <img src="/Logo.png" width="125" height="35" ></img>
+              <a href='/'>
+                <img src="/Logo.png" width="125" height="35" alt='logo' ></img>
               </a>
             </Navbar.Brand>
           </LinkContainer>
