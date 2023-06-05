@@ -44,12 +44,12 @@ export const login = (phone, redirectOnSuccess) => async (dispatch) => {
       config
     )
 
-    dispatch({
-      type: USER_LOGIN_REQUEST,
-      payload: data,
-    })
+    // dispatch({
+    //   type: USER_LOGIN_REQUEST,
+    //   payload: data,
+    // })
 
-    localStorage.setItem('userInfo', JSON.stringify(data))
+    // localStorage.setItem('userInfo', JSON.stringify(data))
     redirectOnSuccess()
   } catch (error) {
     dispatch({
@@ -115,12 +115,14 @@ export const verifyUser = (phone, otp, redirectOnSuccess) => async (dispatch) =>
       { phone, otp },
       config
     )
-    localStorage.setItem('userInfo', JSON.stringify(data))
 
     dispatch({
       type: USER_LOGIN_SUCCESS,
       payload: data,
     })
+
+    localStorage.setItem('userInfo', JSON.stringify(data))
+
     redirectOnSuccess();
 
   } catch (error) {
@@ -245,10 +247,10 @@ export const register = (name, email, phone, password, redirectOnSuccess) => asy
       payload: data,
     })
 
-    dispatch({
-      type: USER_LOGIN_SUCCESS,
-      payload: data,
-    })
+    // dispatch({
+    //   type: USER_LOGIN_SUCCESS,
+    //   payload: data,
+    // })
 
     // localStorage.setItem('userInfo', JSON.stringify(data))
     redirectOnSuccess();

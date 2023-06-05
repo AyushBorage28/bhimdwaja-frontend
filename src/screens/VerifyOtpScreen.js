@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
+import Loader from '../components/Loader'
 import Message from '../components/Message';
 import { useDispatch, useSelector } from 'react-redux';
 import { USER_VERIFIED } from '../constants/userConstants';
@@ -12,12 +13,12 @@ function Otpinput({ history, location }) {
   const [otp4, setOtp4] = useState("");
   const [otp5, setOtp5] = useState("");
   const [otp6, setOtp6] = useState("");
-  const [error, setError] = useState("");
+  // const [error, setError] = useState("");
   const [phone, setPhone] = useState();
 
   const dispatch = useDispatch();
   const userLogin = useSelector((state) => state.userLogin)
-  const { loading, userInfo } = userLogin
+  const { loading, error, userInfo } = userLogin
 
   const redirect = location.search ? location.search.split('=')[1] : '/'
 
@@ -42,8 +43,10 @@ function Otpinput({ history, location }) {
   async function handleSubmit(event) {
     event.preventDefault();
     const otp = otp1 + otp2 + otp3 + otp4 + otp5 + otp6;
-    dispatch(verifyUser(phone, otp, () => history.push("/")))
-    window.location.reload()
+    dispatch(verifyUser(phone, otp, () => {
+      history.push(redirect);
+      window.location.reload()}))
+    
   }
 
   const inputfocus = (elmnt) => {
@@ -68,7 +71,7 @@ function Otpinput({ history, location }) {
   return (
     <><h1 className='text-center pt-4'>Verify OTP</h1>
       {error && <Message variant='danger'>{error}</Message>}
-
+      {loading && <Loader />}
       <form onSubmit={handleSubmit}>
         <div className="otpContainer">
 
