@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Loader from '../components/Loader'
-import Message from '../components/Message';
+import axios from 'axios'
+import { SERVER_URL } from '../config';
+import Message from '../components/Message'
 import { useDispatch, useSelector } from 'react-redux';
 import { USER_VERIFIED } from '../constants/userConstants';
 import { findUser, verifyUser } from '../actions/userActions';
@@ -13,6 +15,7 @@ function Otpinput({ history, location }) {
   const [otp4, setOtp4] = useState("");
   const [otp5, setOtp5] = useState("");
   const [otp6, setOtp6] = useState("");
+  const [message, setMessage] = useState(null)
   // const [error, setError] = useState("");
   const [phone, setPhone] = useState();
 
@@ -46,7 +49,18 @@ function Otpinput({ history, location }) {
     dispatch(verifyUser(phone, otp, () => {
       history.push(redirect);
       window.location.reload()}))
-    
+  }
+
+  const handleResendOTP = async () => {
+    try{
+      const { data } = await axios.post(`${SERVER_URL}/api/users/resendOTP`, {phone})
+      setMessage(data.message)
+      setTimeout(() => {
+        setMessage(null);
+      }, 1000);
+    }
+    catch(err){
+      }
   }
 
   const inputfocus = (elmnt) => {
@@ -70,9 +84,11 @@ function Otpinput({ history, location }) {
 
   return (
     <><h1 className='text-center pt-4'>Verify OTP</h1>
+    <form onSubmit={handleSubmit}>
       {error && <Message variant='danger'>{error}</Message>}
+      {message && <Message variant='danger'>{message}</Message>}
       {loading && <Loader />}
-      <form onSubmit={handleSubmit}>
+      
         <div className="otpContainer">
 
           <input
@@ -128,7 +144,7 @@ function Otpinput({ history, location }) {
         <Button className="primary mr-3" type="submit">
           Submit
         </Button>
-        <Button className="primary" type="submit">
+        <Button className="primary" onClick={handleResendOTP}>
           Resend OTP
         </Button>
       </form></>
