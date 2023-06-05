@@ -42,7 +42,7 @@ const App = () => {
             <Route path="/placeorder" component={PlaceOrderScreen} />
             <Route path="/login" component={LoginScreen} />
             <Route path="/category/:category" component={ProductPage} />
-            <Route path="/allcategory" component={CategoryPage} />
+            <Route path="/categories" component={CategoryPage} />
             <Route path="/register" component={RegisterScreen} />
             <div className="App">
               <Route path="/verifyotp" component={VerifyOtpScreen} />

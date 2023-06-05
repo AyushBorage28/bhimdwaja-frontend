@@ -8,7 +8,7 @@ import Loader from '../components/Loader'
 import FormContainer from '../components/FormContainer'
 import { listProductDetails, updateProduct } from '../actions/productActions'
 import { PRODUCT_UPDATE_RESET } from '../constants/productConstants'
-import { categories } from '../category'
+import category from '../category'
 import useScrollToTop from '../components/ScrollToTop'
 import { SERVER_URL } from './../config'
 
@@ -184,7 +184,7 @@ const ProductEditScreen = ({ match, history }) => {
               onChange={(e) => setCategory(e.target.value)}
             >
               <option >Select Category</option>
-              {categories.map(categoryObj => (
+              {category.map(categoryObj => (
                 <option key={categoryObj.id} value={categoryObj.id}>{categoryObj.name}</option>
               ))}
             </Form.Control>

@@ -1,8 +1,9 @@
-export const categories = [
+const categories = [
     {
         id: 'one-mukhi',
         name: '1 Mukhi',
-        description: 'vngksdjb'
+        description: 'vngksdjb',
+        image: ''
     },
     {
         id: 'two-mukhi',
@@ -130,3 +131,5 @@ export const categories = [
         description: 'vngksdjb'
     }
 ]
+
+export default categories

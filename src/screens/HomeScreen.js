@@ -56,8 +56,8 @@ const HomeScreen = ({ match }) => {
                 </div>
               </div>
               <div class="card  " className='category-card col-4'>
-                <a href='/category/one-mukhi'>
-                  <img class="card-img-top" src="././images/rudraksha.png" alt="Card cap" href='/category/one-mukhi' />
+                <a href='/categories'>
+                  <img class="card-img-top" src="././images/rudraksha.png" alt="Card cap" href='/categories' />
                 </a>
                 <div class="card-body">
                   <h5 class="card-title title-rudraksha" >Rudraksha</h5>
