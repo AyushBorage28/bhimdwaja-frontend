@@ -91,7 +91,7 @@ const HomeScreen = ({ match }) => {
                   <img class="card-img-top" src="././images/6mukhi.png" alt="Card cap" />
                 </a>
                 
-                  <h4 class="card-title" >savar</h4>
+                  <h4 class="card-title" >1 Mukhi Savar</h4>
              
               </div>
               <div class="card" className='best-selling-card '>

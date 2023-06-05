@@ -16,11 +16,6 @@ const categories = [
         description: 'vngksdjb'
     },
     {
-        id: 'three-mukhi',
-        name: '3 Mukhi',
-        description: 'vngksdjb'
-    },
-    {
         id: 'four-mukhi',
         name: '4 Mukhi',
         description: 'vngksdjb'
@@ -41,12 +36,12 @@ const categories = [
         description: 'vngksdjb'
     },
     {
-        id: 'seven-mukhi',
-        name: '7 Mukhi',
+        id: 'eight-mukhi',
+        name: '8 Mukhi',
         description: 'vngksdjb'
     },
     {
-        id: 'eight-mukhi',
+        id: 'nine-mukhi',
         name: '9 Mukhi',
         description: 'vngksdjb'
     },
@@ -121,15 +116,30 @@ const categories = [
         description: 'vngksdjb'
     },
     {
-        id: 'Ganesh',
-        name: 'Ganesh',
+        id: 'one-mukhi-savar',
+        name: '1 Mukhi Savar',
         description: 'vngksdjb'
     },
     {
-        id: 'gorbha-gauri',
-        name: 'Gorbha Gauri',
+        id: 'ganesh-rudraksha',
+        name: 'Ganesh Rudraksha',
         description: 'vngksdjb'
-    }
+    },
+    {
+        id: 'gorbha-gauri-rudraksha',
+        name: 'Gorbha Gauri Rudraksha',
+        description: 'vngksdjb'
+    },
+    {
+        id: 'rudraksha-mala',
+        name: 'Rudraksha Mala',
+        description: 'vngksdjb'
+    },
+    {
+        id: 'gems',
+        name: 'Gems',
+        description: 'vngksdjb'
+    },
 ]
 
 export default categories

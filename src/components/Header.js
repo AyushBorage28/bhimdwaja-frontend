@@ -141,6 +141,9 @@ const Header = () => {
                       <td style={{ paddingRight: 15, paddingBottom: 5 }} className='category-link' >
                         <a href='/category/twentyone-mukhi' style={{ textDecoration: 'none' }}>21-Mukhi</a>
                       </td>
+                      <td style={{ paddingRight: 15, paddingBottom: 5 }} className='category-link' >
+                        <a href='/category/one-mukhi-savar' style={{ textDecoration: 'none' }}>1 Mukhi Savar</a>
+                      </td>
                     </tr>
                     <tr>
                       <td style={{ paddingRight: 15, paddingBottom: 5 }} className='category-link' >
