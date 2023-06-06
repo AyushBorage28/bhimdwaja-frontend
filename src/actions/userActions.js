@@ -31,7 +31,6 @@ import { SERVER_URL } from '../config'
 export const login = (phone, redirectOnSuccess) => async (dispatch) => {
   try {
 
-
     const config = {
       headers: {
         'Content-Type': 'application/json',
@@ -63,41 +62,43 @@ export const login = (phone, redirectOnSuccess) => async (dispatch) => {
   }
 }
 
-// export const findUser = (phone, redirectOnSuccess) => async (dispatch) => {
-//   try {
-//     dispatch({
-//       type: USER_DETAILS_REQUEST,
-//     })
+export const loginViaPassword = (phone, password, redirectOnSuccess) => async (dispatch) => {
+  try {
+    dispatch({
+      type: USER_LOGIN_REQUEST,
+    })
 
-//     const config = {
-//       headers: {
-//         'Content-Type': 'application/json',
-//       },
-//     }
+    const config = {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }
+    const { data } = await axios.post(
+      `${SERVER_URL}/api/users/loginviapassword`,
+      { phone, password },
+      config
+    )
 
-//     const { data } = await axios.post(
-//       '${SERVER_URL}/users/finduser',
-//       { phone },
-//       config
-//     )
+    dispatch({
+      type: USER_LOGIN_SUCCESS,
+      payload: data,
+    })
 
-//     dispatch({
-//       type: USER_DETAILS_SUCCESS,
-//       payload: data,
-//     })
+    localStorage.setItem('userInfo', JSON.stringify(data))
 
-//     localStorage.setItem('userInfo', JSON.stringify(data))
-//     redirectOnSuccess();
-//   } catch (error) {
-//     dispatch({
-//       type: USER_DETAILS_FAIL,
-//       payload:
-//         error.response && error.response.data.message
-//           ? error.response.data.message
-//           : error.message,
-//     })
-//   }
-// }
+    redirectOnSuccess();
+
+  } catch (error) {
+    console.log(error)
+    dispatch({
+      type: USER_LOGIN_FAIL,
+      payload:
+        error.response && error.response.data.message
+          ? error.response.data.message
+          : error.message,
+    })
+  }
+}
 
 export const verifyUser = (phone, otp, redirectOnSuccess) => async (dispatch) => {
   try {

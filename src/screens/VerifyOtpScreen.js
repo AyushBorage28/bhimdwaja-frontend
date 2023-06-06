@@ -45,7 +45,7 @@ function Otpinput({ history, location }) {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    const otp = otp1 + otp2 + otp3 + otp4 + otp5 + otp6;
+    const otp = otp1 + otp2 + otp3 + otp4;
     dispatch(verifyUser(phone, otp, () => {
       history.push(redirect);
       window.location.reload()}))
@@ -123,22 +123,7 @@ function Otpinput({ history, location }) {
             value={otp4}
             onChange={e => setOtp4(e.target.value)}
             tabIndex="4" maxLength="1" onKeyUp={e => inputfocus(e)} />
-          <input
-            name="otp5"
-            type="text"
-            autoComplete="off"
-            className="otpInput"
-            value={otp5}
-            onChange={e => setOtp5(e.target.value)}
-            tabIndex="5" maxLength="1" onKeyUp={e => inputfocus(e)} />
-          <input
-            name="otp6"
-            type="text"
-            autoComplete="off"
-            className="otpInput"
-            value={otp6}
-            onChange={e => setOtp6(e.target.value)}
-            tabIndex="6" maxLength="1" onKeyUp={e => inputfocus(e)} />
+
         </div>
         <p>If didn't receive in 60 seconds, click on Resend OTP.</p>
         <Button className="primary mr-3" type="submit">

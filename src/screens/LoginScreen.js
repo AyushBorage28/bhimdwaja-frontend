@@ -5,13 +5,14 @@ import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import FormContainer from '../components/FormContainer'
-import { login} from '../actions/userActions'
+import { login, loginViaPassword } from '../actions/userActions'
 import useScrollToTop from '../components/ScrollToTop'
-
+import { toBeDisabled } from '@testing-library/jest-dom'
 
 const LoginScreen = ({ location, history }) => {
   
   const [phone, setPhone] = useState('')
+  const [password, setPassword] = useState('')
   const dispatch = useDispatch()
 
   const userLogin = useSelector((state) => state.userLogin)
@@ -31,13 +32,18 @@ const LoginScreen = ({ location, history }) => {
     e.preventDefault()
     dispatch(login(phone, () => history.push(`/verifyotp/?phone=${phone}`)))
   }
+  const submitPassword = (e) => {
+    e.preventDefault()
+    dispatch(loginViaPassword(phone, password, () => history.push(redirect)))
+  }
 
   return (
     <FormContainer>
       <h1>Sign In</h1>
       {error && <Message variant='danger'>{error}</Message>}
       {loading && <Loader />}
-      <Form onSubmit={submitHandler}>
+      <Form onSubmit={submitPassword}>
+
         <Form.Group controlId='phone'>
           <Form.Label>Phone Number</Form.Label>
           <Form.Control
@@ -47,9 +53,24 @@ const LoginScreen = ({ location, history }) => {
             onChange={(e) => setPhone(e.target.value)}
           ></Form.Control>
         </Form.Group>
+
+        <Form.Group controlId='password'>
+          <Form.Label>Password</Form.Label>
+          <Form.Control
+            type='password'
+            placeholder='Enter password'
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          ></Form.Control>
+        </Form.Group>
+
         <Button type='submit' variant='primary'>
-          Sign In
+          Login with password
         </Button>
+        <Button className='mx-3' variant='primary' onClick={submitHandler} >
+          Get OTP
+        </Button>
+        
       </Form>
       <Row className='py-3'>
         <Col>
