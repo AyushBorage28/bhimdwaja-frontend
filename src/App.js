@@ -27,6 +27,7 @@ import FAQsScreen from "./screens/FAQsScreen";
 import CustomizationScreen from "./screens/CustomizationScreen";
 import EnergizationScreen from "./screens/EnergizationScreen";
 import PageNotFound from "./screens/PageNotFound";
+import SearchScreen from "./screens/SearchScreen";
 
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -72,13 +73,13 @@ const App = () => {
                 component={ProductEditScreen}
               />
               <Route path="/admin/orderlist" component={OrderListScreen} />
-              <Route path="/search/:keyword" component={HomeScreen} exact />
+              <Route path="/search/:keyword" component={SearchScreen} exact />
               <Route path="/page/:pageNumber" component={HomeScreen} exact />
-              <Route
+              {/* <Route
                 path="/search/:keyword/page/:pageNumber"
                 component={HomeScreen}
                 exact
-              />
+              /> */}
               <Route path="/" component={HomeScreen} exact />
               <Route component={PageNotFound} />
             </Switch>
