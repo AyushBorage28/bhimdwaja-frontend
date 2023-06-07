@@ -27,14 +27,21 @@ const ProductPage = ({ match }) => {
   useEffect(() => {
     dispatch(listProducts(keyword, category, pageNumber))
   }, [dispatch, keyword, category, pageNumber])
-  
+
   useScrollToTop()
+
+  const categoryImageName = category ? category.toLowerCase() : '';
 
   return (
     <>
       <Meta />
       {!keyword ? (
-        <ProductCarousel />
+        <img
+          className="d-block w-100"
+          src={`https://bhidhwaja-images.s3.amazonaws.com/Website+Images/${categoryImageName}-banner.jpg`}
+          alt="First slide"
+          fluid="true"
+        />
       ) : (
         <Link to='/categories' className='btn btn-light'>
           Go Back
