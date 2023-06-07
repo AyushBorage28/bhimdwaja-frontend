@@ -86,7 +86,7 @@ const Footer = () => {
 
                   <ul class="list-unstyled mb-0">
                     <li>
-                      <a href="/terms-and-conditions" class="text-black">Privacy Policy</a>
+                      <a href="/privacy-policy" class="text-black">Privacy Policy</a>
                     </li>
                     <li>
                       <a href="#!" class="text-black">Blogs</a>
@@ -124,10 +124,10 @@ const Footer = () => {
                   <h5 class="text-uppercase">Mail Us</h5>
                   <ul class="list-unstyled mb-0">
                     <li>
-                      <a href="#!" class="text-black">bhimdhwaja@gmail.com</a>
+                      <a href={`mailto:bhimdhwaja@gmail.com`} class="text-black">bhimdhwaja@gmail.com</a>
                     </li>
                     <li>
-                      <a href="#!" class="text-black">smrutikodilkar@gmail.com</a>
+                      <a href={`mailto:smrutikodilkar@gmail.com`} class="text-black">smrutikodilkar@gmail.com</a>
                     </li>
                     <li>
                       <a href="#!" class="text-black">Call:+91 8668616591</a>
@@ -152,7 +152,7 @@ const Footer = () => {
 
           <div class="text-center p-3">
             © 2023 Copyright:
-            <a class="text-black footer-name" href="https://mdbootstrap.com/" style={{ textDecoration: 'none', fontWeight: "inherit" }}> Bhimdwaja.in</a>
+            <a class="text-black footer-name" href="https://www.bhimdhwaja.in" style={{ textDecoration: 'none', fontWeight: "inherit" }}> Bhimdwaja.in</a>
           </div>
 
         </footer>

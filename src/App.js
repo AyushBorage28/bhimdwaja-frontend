@@ -28,6 +28,7 @@ import CustomizationScreen from "./screens/CustomizationScreen";
 import EnergizationScreen from "./screens/EnergizationScreen";
 import PageNotFound from "./screens/PageNotFound";
 import SearchScreen from "./screens/SearchScreen";
+import PrivacyPolicyScreen from "./screens/PrivacyPolicyScreen";
 
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -53,6 +54,7 @@ const App = () => {
               <Route path="/faqs" component={FAQsScreen} />
               <Route path="/customization" component={CustomizationScreen} />
               <Route path="/energization" component={EnergizationScreen} />
+              <Route path="/privacy-policy" component={PrivacyPolicyScreen} />
               <Route path="/profile" component={ProfileScreen} />
               <Route path="/product/:id" component={ProductScreen} />
               <Route path="/cart/:id?" component={CartScreen} />
