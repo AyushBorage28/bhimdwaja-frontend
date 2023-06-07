@@ -36,7 +36,7 @@ const App = () => {
       <Router>
         <Header />
         <main className="py-3">
-          <Container fluid className="px-0">
+          <Container fluid>
 
             <Switch>
               <Route path="/order/:id" component={OrderScreen} />
