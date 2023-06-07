@@ -35,8 +35,9 @@ const App = () => {
     <CategoryContext.Provider value={{ selectedCategory, setSelectedCategory }}>
       <Router>
         <Header />
-        <main className={window.location.pathname === "/" ? "" : "py-3"}>
-          <Container>
+        <main className="py-3">
+          <Container fluid className="px-0">
+
             <Switch>
               <Route path="/order/:id" component={OrderScreen} />
               <Route path="/shipping" component={ShippingScreen} />

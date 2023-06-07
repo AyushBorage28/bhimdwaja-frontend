@@ -50,6 +50,13 @@ h2 {
   top: 0;
 }
 
+.carousel-container {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
 .carousel-caption h2 {
   color: #fff;
 }
@@ -107,8 +114,35 @@ h2 {
 
 
 .otpContainer {
-  margin: 5% auto;
+  /* display: flex;
+  justify-content: center; */
+  margin-top: 5%;
 }
+
+/* .otp-form>p {
+  display: flex;
+  justify-content: center;
+} */
+
+.otp-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.otp-buttons .otp-btn {
+  margin-right: 10px;
+}
+
+
+.otp-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 
 .otpInput {
   width: 3rem !important;

@@ -48,19 +48,20 @@ function Otpinput({ history, location }) {
     const otp = otp1 + otp2 + otp3 + otp4;
     dispatch(verifyUser(phone, otp, () => {
       history.push(redirect);
-      window.location.reload()}))
+      window.location.reload()
+    }))
   }
 
   const handleResendOTP = async () => {
-    try{
-      const { data } = await axios.post(`${SERVER_URL}/api/users/resendOTP`, {phone})
+    try {
+      const { data } = await axios.post(`${SERVER_URL}/api/users/resendOTP`, { phone })
       setMessage(data.message)
       setTimeout(() => {
         setMessage(null);
       }, 1000);
     }
-    catch(err){
-      }
+    catch (err) {
+    }
   }
 
   const inputfocus = (elmnt) => {
@@ -84,11 +85,11 @@ function Otpinput({ history, location }) {
 
   return (
     <><h1 className='text-center pt-4'>Verify OTP</h1>
-    <form onSubmit={handleSubmit}>
-      {error && <Message variant='danger'>{error}</Message>}
-      {message && <Message variant='danger'>{message}</Message>}
-      {loading && <Loader />}
-      
+      <form onSubmit={handleSubmit} className='otp-form'>
+        {error && <Message variant='danger'>{error}</Message>}
+        {message && <Message variant='danger'>{message}</Message>}
+        {loading && <Loader />}
+
         <div className="otpContainer">
 
           <input
@@ -126,12 +127,14 @@ function Otpinput({ history, location }) {
 
         </div>
         <p>If didn't receive in 60 seconds, click on Resend OTP.</p>
-        <Button className="primary mr-3" type="submit">
-          Submit
-        </Button>
-        <Button className="primary" onClick={handleResendOTP}>
-          Resend OTP
-        </Button>
+        <div className="otp-buttons">
+          <Button className="primary otp-btn" type="submit">
+            Submit
+          </Button>
+          <Button className="primary otp-btn" onClick={handleResendOTP}>
+            Resend OTP
+          </Button>
+        </div>
       </form></>
   );
 }

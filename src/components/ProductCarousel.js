@@ -21,7 +21,7 @@ const ProductCarousel = () => {
   ) : error ? (
     <Message variant='danger'>{error}</Message>
   ) : (
-    <Carousel pause='hover' className='bg-dark'>
+    <Carousel pause='hover' className='bg-dark carousel-container'>
       <Carousel.Item>
         <img
           className="d-block w-100"
