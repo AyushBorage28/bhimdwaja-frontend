@@ -23,7 +23,7 @@ const Header = () => {
     <header>
       <Navbar style={{ backgroundColor: "#B87333" }} variant="dark" className="py-2">
         <Container className="d-flex align-items-center">
-          <p className="m-0" style={{color:'black', fontWeight:'bold'}}>Bhimdwaja | Bhimashankar- Gems and Rudraksha</p>
+          <p className="m-0" style={{color:'black'}}>Bhimdwaja | Bhimashankar- Gems and Rudraksha</p>
           <Nav className="ml-auto">
             <Button variant="light" href="/customization" size="sm" active>
               Our Customization
@@ -54,7 +54,7 @@ const Header = () => {
                   <tbody style={{ textAlign: 'center' }}>
                     <tr>
                       <td style={{ paddingRight: 15, paddingBottom: 5 }}>
-                        <a style={{ textDecoration: 'none', fontSize: 13, fontWeight: 900, color: 'black' }}><strong>All Rudraksha</strong></a>
+                        <a href style={{ textDecoration: 'none', fontSize: 13, fontWeight: 900, color: 'black' }}><strong>All Rudraksha</strong></a>
                       </td>
                     </tr>
                     <tr>

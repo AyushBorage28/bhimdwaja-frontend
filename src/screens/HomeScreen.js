@@ -78,54 +78,54 @@ const HomeScreen = ({ match }) => {
 
           <h1 className='text-center pt-4'>Our Best-Selling Rudraksha</h1>
           <div class="card-group" className='best-selling-card-grp'>
-              <div class="card" className='best-selling-card '>
-                <a href='/category/gem'>
-                  <img class="card-img-top" src="././images/gaurishankar.png" alt="Card cap" />
-                </a>
-                
-                  <h4 class="card-title" >gauri <br></br> shankar</h4>
-                
-              </div>
-              <div class="card" className='best-selling-card'>
-                <a href='/category/gem'>
-                  <img class="card-img-top" src="././images/6mukhi.png" alt="Card cap" />
-                </a>
-                
-                  <h4 class="card-title" >1 Mukhi Savar</h4>
-             
-              </div>
-              <div class="card" className='best-selling-card '>
-                <a href='/category/gem'>
-                  <img class="card-img-top" src="././images/ganesh.png" alt="Card cap" />
-                </a>
-              
-                  <h4 class="card-title" >ganesh</h4>
-           
-              </div>
-              <div class="card" className='best-selling-card '>
-                <a href='/category/gem'>
-                  <img class="card-img-top" src="././images/6mukhi.png" alt="Card cap" />
-                </a>
-           
-                  <h4 class="card-title" >6 mukhi</h4>
-               
-              </div>
-              <div class="card" className='best-selling-card  '>
-                <a href='/category/gem'>
-                  <img class="card-img-top" src="././images/11mukhi.png" alt="Card cap" />
-                </a>
-              
-                  <h4 class="card-title" >11 mukhi</h4>
-         
-              </div>
-             
+            <div class="card" className='best-selling-card '>
+              <a href='/category/gem'>
+                <img class="card-img-top" src="././images/gaurishankar.png" alt="Card cap" />
+              </a>
+
+              <h4 class="card-title" >gauri <br></br> shankar</h4>
+
             </div>
-       
+            <div class="card" className='best-selling-card'>
+              <a href='/category/gem'>
+                <img class="card-img-top" src="././images/1-mukhi-savar.png" alt="Card cap" />
+              </a>
+
+              <h4 class="card-title" >1 Mukhi Savar</h4>
+
+            </div>
+            <div class="card" className='best-selling-card '>
+              <a href='/category/gem'>
+                <img class="card-img-top" src="././images/ganesh.png" alt="Card cap" />
+              </a>
+
+              <h4 class="card-title" >ganesh</h4>
+
+            </div>
+            <div class="card" className='best-selling-card '>
+              <a href='/category/gem'>
+                <img class="card-img-top" src="././images/6mukhi.png" alt="Card cap" />
+              </a>
+
+              <h4 class="card-title" >6 mukhi</h4>
+
+            </div>
+            <div class="card" className='best-selling-card  '>
+              <a href='/category/gem'>
+                <img class="card-img-top" src="././images/11mukhi.png" alt="Card cap" />
+              </a>
+
+              <h4 class="card-title" >11 mukhi</h4>
+
+            </div>
+
+          </div>
+
 
           <FAQsScreen />
         </>
       )}
-      </>
+    </>
   )
 }
 
