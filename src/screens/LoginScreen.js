@@ -10,7 +10,7 @@ import useScrollToTop from '../components/ScrollToTop'
 import { toBeDisabled } from '@testing-library/jest-dom'
 
 const LoginScreen = ({ location, history }) => {
-  
+
   const [phone, setPhone] = useState('')
   const [password, setPassword] = useState('')
   const dispatch = useDispatch()
@@ -64,18 +64,21 @@ const LoginScreen = ({ location, history }) => {
           ></Form.Control>
         </Form.Group>
 
-        <Button type='submit' variant='primary'>
-          Login with password
-        </Button>
-        <Button className='mx-3' variant='primary' onClick={submitHandler} >
-          Get OTP
-        </Button>
-        
+        <div className="button-container">
+          <Button type="submit" variant="primary">
+            Login with password
+          </Button>
+          <Button variant="primary" onClick={submitHandler}>
+            Login with OTP
+          </Button>
+        </div>
+
+
       </Form>
-      <Row className='py-3'>
-        <Col>
+      <Row className='py-3'  >
+        <Col style={{fontWeight:'500'}}>
           New Customer?{' '}
-          <Link to={redirect ? `/register?redirect=${redirect}` : '/register'}>
+          <Link to={redirect ? `/register?redirect=${redirect}` : '/register'} >
             Register
           </Link>
         </Col>

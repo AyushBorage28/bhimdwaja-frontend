@@ -6,7 +6,6 @@ import Product from '../components/Product'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import Paginate from '../components/Paginate'
-import ProductCarousel from '../components/ProductCarousel'
 import Meta from '../components/Meta'
 import { listProducts } from '../actions/productActions'
 import useScrollToTop from '../components/ScrollToTop'
@@ -39,7 +38,7 @@ const ProductPage = ({ match }) => {
         <img
           className="d-block w-100"
           src={`https://bhidhwaja-images.s3.amazonaws.com/Website+Images/${categoryImageName}-banner.jpg`}
-          alt="First slide"
+          alt="product banner"
           fluid="true"
         />
       ) : (
