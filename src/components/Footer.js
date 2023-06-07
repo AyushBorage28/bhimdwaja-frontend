@@ -4,10 +4,10 @@ const Footer = () => {
   return (
     <footer>
 
-      <div class="container my-5">
+      <div class="container mt-5" style={{ backgroundColor: "#FFe8d6" }} >
 
 
-        <footer class=" text-center text-black">
+        <footer class=" text-center text-black" style={{ fontWeight: '400' }}>
 
           <div class="container p-4">
 
@@ -57,7 +57,8 @@ const Footer = () => {
 
                   <div class="col-auto">
 
-                    <button type="submit" class="btn btn-outline-dark mb-4">
+                    <button type="submit" class="btn btn-outline-dark mb-4"
+                      style={{ fontWeight: '700' }}>
                       Subscribe
                     </button>
                   </div>
@@ -151,7 +152,7 @@ const Footer = () => {
 
           <div class="text-center p-3">
             © 2023 Copyright:
-            <a class="text-black footer-name" href="https://mdbootstrap.com/" style={{ textDecoration: 'none' }}> Bhimdwaja.in</a>
+            <a class="text-black footer-name" href="https://mdbootstrap.com/" style={{ textDecoration: 'none', fontWeight: "inherit" }}> Bhimdwaja.in</a>
           </div>
 
         </footer>
