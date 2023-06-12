@@ -25,7 +25,7 @@ const ProductCarousel = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/images/banner.png"
+          src="https://bhidhwaja-images.s3.amazonaws.com/Website+Images/bhimdhwaja-english-banner.jpg"
           alt="First slide"
           fluid="true"
         />
@@ -33,7 +33,7 @@ const ProductCarousel = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/images/banner-2.png"
+          src="https://bhidhwaja-images.s3.amazonaws.com/Website+Images/bhimdhwaja-marathi-banner.jpg"
           alt="Second slide"
           fluid="true"
         />

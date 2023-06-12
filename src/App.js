@@ -29,6 +29,7 @@ import EnergizationScreen from "./screens/EnergizationScreen";
 import PageNotFound from "./screens/PageNotFound";
 import SearchScreen from "./screens/SearchScreen";
 import PrivacyPolicyScreen from "./screens/PrivacyPolicyScreen";
+import SimpleMap from "./screens/ContactUs";
 
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -53,6 +54,7 @@ const App = () => {
               <Route path="/terms-and-conditions" component={TandCScreen} />
               <Route path="/faqs" component={FAQsScreen} />
               <Route path="/customization" component={CustomizationScreen} />
+              <Route path="/contact-us" component={SimpleMap} />
               <Route path="/energization" component={EnergizationScreen} />
               <Route path="/privacy-policy" component={PrivacyPolicyScreen} />
               <Route path="/profile" component={ProfileScreen} />
