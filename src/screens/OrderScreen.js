@@ -99,7 +99,7 @@ const OrderScreen = ({ match, history }) => {
       dispatch(deliverOrder(order));
     }
   };
-  
+
 
   return loading ? (
     <Loader />
@@ -234,7 +234,8 @@ const OrderScreen = ({ match, history }) => {
                 )
               ) : (
                 <ListGroup.Item>
-                  <Button disabled>Order Placed</Button>
+                  <Button
+                  disabled>Order Placed</Button>
                 </ListGroup.Item>
               )}
 
