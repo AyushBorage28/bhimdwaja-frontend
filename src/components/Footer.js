@@ -152,7 +152,7 @@ const Footer = () => {
 
           <div class="text-center p-3">
             © 2023 Copyright:
-            <a class="text-black footer-name" href="https://www.bhimdhwaja.in" style={{ textDecoration: 'none', fontWeight: "inherit" }}> Bhimdwaja.in</a>
+            <a class="text-black footer-name" href="https://www.bhimdhwaja.in" style={{ textDecoration: 'none', fontWeight: "inherit" }}> Bhimdhwaja.in</a>
           </div>
 
         </footer>

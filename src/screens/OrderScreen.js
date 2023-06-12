@@ -81,13 +81,25 @@ const OrderScreen = ({ match, history }) => {
   }, [dispatch, orderId, successPay, successDeliver, order])
 
   const successPaymentHandler = (paymentResult) => {
-    console.log(paymentResult)
-    dispatch(payOrder(orderId, paymentResult))
-  }
+    // Update the order's payment status
+    order.isPaid = true;
+    order.paidAt = new Date().toISOString();
+
+    // Dispatch an action to update the order's payment status in the Redux store
+    dispatch({ type: 'ORDER_PAY_SUCCESS' });
+  };
+
 
   const deliverHandler = () => {
     dispatch(deliverOrder(order))
   }
+
+  const markAsDeliveredHandler = () => {
+    if (window.confirm('Are you sure you want to mark this order as delivered?')) {
+      dispatch(deliverOrder(order));
+    }
+  };
+  
 
   return loading ? (
     <Loader />
@@ -199,34 +211,33 @@ const OrderScreen = ({ match, history }) => {
                   <Col>₹{order.totalPrice}</Col>
                 </Row>
               </ListGroup.Item>
-              {!order.isPaid && (
-                <ListGroup.Item>
-                  {loadingPay && <Loader />}
-                  {!sdkReady ? (
-                    <Loader />
-                  ) : (
-                    <Button
-                      amount={order.totalPrice}
-                      onSuccess={successPaymentHandler}
-                    />
-                  )}
-                </ListGroup.Item>
-              )}
-              {loadingDeliver && <Loader />}
-              {userInfo &&
-                userInfo.isAdmin &&
-                order.isPaid &&
+
+              {/* <ListGroup.Item>
+                <Button
+                  disabled
+                >Order Placed</Button>
+              </ListGroup.Item> */}
+
+
+
+              {userInfo && userInfo.isAdmin ? (
                 !order.isDelivered && (
                   <ListGroup.Item>
                     <Button
                       type='button'
                       className='btn btn-block'
-                      onClick={deliverHandler}
+                      onClick={markAsDeliveredHandler}
                     >
                       Mark As Delivered
                     </Button>
                   </ListGroup.Item>
-                )}
+                )
+              ) : (
+                <ListGroup.Item>
+                  <Button disabled>Order Placed</Button>
+                </ListGroup.Item>
+              )}
+
             </ListGroup>
           </Card>
         </Col>

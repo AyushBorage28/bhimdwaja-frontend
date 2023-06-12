@@ -23,7 +23,7 @@ const Header = () => {
     <header>
       <Navbar style={{ backgroundColor: "#B87333" }} variant="dark" className="py-2 d-none d-md-block">
         <Container className="d-flex align-items-center">
-          <p className="m-0" style={{color:'black'}}>Bhimdwaja | Bhimashankar- Gems and Rudraksha</p>
+          <p className="m-0" style={{ color: 'black' }}>Bhimdhwaja | Bhimashankar- Gems and Rudraksha</p>
           <Nav className="ml-auto">
             <Button variant="light" href="/customization" size="sm" active>
               Our Customization

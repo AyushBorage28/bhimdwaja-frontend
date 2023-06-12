@@ -50,18 +50,23 @@ const PlaceOrderScreen = ({ history }) => {
   useScrollToTop()
 
   const placeOrderHandler = () => {
+    const shippingAddress = {
+      ...cart.shippingAddress,
+      country: 'India' // Set the country to India
+    };
+
     dispatch(
       createOrder({
         orderItems: cart.cartItems,
-        shippingAddress: cart.shippingAddress,
+        shippingAddress,
         paymentMethod: cart.paymentMethod,
         itemsPrice: cart.itemsPrice,
         shippingPrice: cart.shippingPrice,
         taxPrice: cart.taxPrice,
         totalPrice: cart.totalPrice,
       })
-    )
-  }
+    );
+  };
 
   return (
     <>
