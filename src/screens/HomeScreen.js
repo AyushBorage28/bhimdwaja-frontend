@@ -79,7 +79,7 @@ const HomeScreen = ({ match }) => {
           <h1 className='text-center pt-4'>Our Best-Selling Rudraksha</h1>
           <div class="card-group" className='best-selling-card-grp'>
             <div class="card" className='best-selling-card '>
-              <a href='/category/gem'>
+              <a href='/category/gauri-shankar'>
                 <img class="card-img-top" src="././images/gaurishankar.png" alt="Card cap" />
               </a>
 
@@ -87,7 +87,7 @@ const HomeScreen = ({ match }) => {
 
             </div>
             <div class="card" className='best-selling-card'>
-              <a href='/category/gem'>
+              <a href='/category/one-mukhi-savar'>
                 <img class="card-img-top" src="././images/1-mukhi-savar.png" alt="Card cap" />
               </a>
 
@@ -95,7 +95,7 @@ const HomeScreen = ({ match }) => {
 
             </div>
             <div class="card" className='best-selling-card '>
-              <a href='/category/gem'>
+              <a href='/category/ganesha-rudraksha'>
                 <img class="card-img-top" src="././images/ganesh.png" alt="Card cap" />
               </a>
 
@@ -103,7 +103,7 @@ const HomeScreen = ({ match }) => {
 
             </div>
             <div class="card" className='best-selling-card '>
-              <a href='/category/gem'>
+              <a href='/category/six-mukhi'>
                 <img class="card-img-top" src="././images/6mukhi.png" alt="Card cap" />
               </a>
 
@@ -111,7 +111,7 @@ const HomeScreen = ({ match }) => {
 
             </div>
             <div class="card" className='best-selling-card  '>
-              <a href='/category/gem'>
+              <a href='/category/eleven-mukhi'>
                 <img class="card-img-top" src="././images/11mukhi.png" alt="Card cap" />
               </a>
 

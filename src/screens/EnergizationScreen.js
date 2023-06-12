@@ -11,7 +11,7 @@ const EnergizationScreen = () => {
       <h1>Our Energization</h1>
         <p style={{color: '#000000'}}><strong>Rudraksha beads are considered sacred and are believed to possess divine energy. To fully unlock their potential, it is important to bless, purify, and energize them before wearing. At Bhimdhwaja, we hold this process in high regard and ensure that each order undergoes a special energization ritual at the revered Lord Bhimashankar Temple before being shipped to our customers.</strong></p><br />
 
-        <p style={{color: '#000000'}}><strong>The Lord Bhimashankar Temple holds a significant position as the 6th Jyotirlinga among the 12 Jyotirlingas. We are honored to have the opportunity to energize our Rudraksha beads at this revered place. Through this ritual, we invoke the blessings of Lord Shiva and infuse the beads with positive vibrations and spiritual potency.</strong></p><br />
+        <p style={{color: '#000000'}}><strong><span style={{fontWeight:'bold'}}> The Lord Bhimashankar Temple </span> holds a significant position as the 6th Jyotirlinga among the 12 Jyotirlingas. We are honored to have the opportunity to energize our Rudraksha beads at this revered place. Through this ritual, we invoke the blessings of Lord Shiva and infuse the beads with positive vibrations and spiritual potency.</strong></p><br />
 
         <p style={{color: '#000000'}}><strong>As part of our commitment to providing the best to our customers, we offer free touch energization for all Rudraksha beads purchased from us. Our dedicated team performs a special energization ceremony, ensuring that each bead is infused with divine blessings and positive energy before it is dispatched.</strong></p><br />
 

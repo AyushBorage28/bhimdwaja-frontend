@@ -20,9 +20,15 @@ const SearchBox = ({ history }) => {
         name='q'
         onChange={(e) => setKeyword(e.target.value)}
         placeholder='Search Products...'
-        className='mr-sm-2 ml-sm-5'
+        style={{
+          padding: "2px 11px",
+          fontSize: "13px",
+          borderRadius: "0",
+          fontWeight: "normal"
+        }}
+        className='mr-sm-2 ml-sm-5 mt-md-0 mt-3'
       ></Form.Control>
-      <Button type='submit' style={{ backgroundColor: "#b27b23" }} className='p-2 mt-md-0 mt-2'>
+      <Button type='submit' style={{ backgroundColor: "#b27b23", padding: "5px 11px", borderRadius: "0" }} className=' mt-md-0 mt-2'>
         Search
       </Button>
     </Form>
