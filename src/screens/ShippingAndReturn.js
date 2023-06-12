@@ -1,9 +1,10 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const ShippingAndReturn = () => {
   return (
-    <>
+    <Container className="py-3" fluid>
       <Link to='/' className='btn btn-light my-3'>
         Go Back
       </Link>
@@ -20,7 +21,7 @@ const ShippingAndReturn = () => {
       <p style={{color: '#000000'}}><strong>To ensure a seamless and hassle-free shopping experience, we recommend referring to the shipping information provided during the checkout process. This will give you a more accurate estimate of the expected delivery timeframe based on your specific location.</strong></p><br />
       <p style={{color: '#000000'}}><strong>Rest assured, our commitment to exceptional customer service extends to the shipping process, and we continually strive to deliver your order to you in a timely manner. We appreciate your patience and understanding as we work diligently to ensure the safe and prompt arrival of your cherished Rudraksha or gemstone products.</strong></p><br />
       </div>
-    </>
+    </Container>
   )
 }
 

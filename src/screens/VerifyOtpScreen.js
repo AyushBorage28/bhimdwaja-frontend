@@ -7,6 +7,7 @@ import Message from '../components/Message';
 import { useDispatch, useSelector } from 'react-redux';
 import { USER_VERIFIED } from '../constants/userConstants';
 import { findUser, verifyUser } from '../actions/userActions';
+import { Container } from 'react-bootstrap';
 
 function Otpinput({ history, location }) {
   const [otp1, setOtp1] = useState('');
@@ -91,7 +92,7 @@ function Otpinput({ history, location }) {
   }, [timer]);
 
   return (
-    <>
+    <Container className="py-3" fluid>
       <h1 className="text-center pt-4">Verify OTP</h1>
       <form onSubmit={handleSubmit} className="otp-form">
         {error && <Message variant="danger">{error}</Message>}
@@ -152,7 +153,7 @@ function Otpinput({ history, location }) {
           </Button>
         </div>
       </form>
-    </>
+    </Container>
   );
 }
 

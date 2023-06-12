@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { Form, Button, Row, Col } from 'react-bootstrap'
+import { Form, Button, Row, Col, Container } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import FormContainer from '../components/FormContainer'
 import { login, loginViaPassword } from '../actions/userActions'
 import useScrollToTop from '../components/ScrollToTop'
-import { toBeDisabled } from '@testing-library/jest-dom'
+
 
 const LoginScreen = ({ location, history }) => {
 
@@ -38,6 +38,7 @@ const LoginScreen = ({ location, history }) => {
   }
 
   return (
+    <Container className="py-3" fluid>
     <FormContainer>
       <h1>Sign In</h1>
       {error && <Message variant='danger'>{error}</Message>}
@@ -84,6 +85,7 @@ const LoginScreen = ({ location, history }) => {
         </Col>
       </Row>
     </FormContainer>
+    </Container>
   )
 }
 

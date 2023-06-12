@@ -1,9 +1,10 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const CustomizationScreen = () => {
   return (
-    <>
+    <Container className="py-3" fluid>
       <Link to="/" className="btn btn-light my-3">
         Go Back
       </Link>
@@ -19,7 +20,7 @@ const CustomizationScreen = () => {
           <strong>
             <ul>
               <li>
-                To initiate the customization process, we encourage you to share your requirements with us via email. <span style={{fontWeight:'bold'}}> Reach out to us at bhimdhwaja@gmail.com </span>, and our dedicated team will carefully review your request. If you have any questions or need further clarification before confirming your requirements, please don't hesitate to <span style={{fontWeight:'bold'}}> contact us at  our helpline number: +918668616591 </span>. We are here to assist you every step of the way.
+                To initiate the customization process, we encourage you to share your requirements with us via email. <span style={{ fontWeight: 'bold' }}> Reach out to us at bhimdhwaja@gmail.com </span>, and our dedicated team will carefully review your request. If you have any questions or need further clarification before confirming your requirements, please don't hesitate to <span style={{ fontWeight: 'bold' }}> contact us at  our helpline number: +918668616591 </span>. We are here to assist you every step of the way.
               </li>
               <br />
               <li>
@@ -68,7 +69,7 @@ const CustomizationScreen = () => {
           />
         </div>
       </div>
-    </>
+    </Container>
   );
 };
 

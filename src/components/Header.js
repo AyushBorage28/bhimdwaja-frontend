@@ -56,7 +56,7 @@ const Header = () => {
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
-          <Navbar.Collapse id='basic-navbar-nav' >
+          <Navbar.Collapse id='basic-navbar-nav'>
             <Route render={({ history }) => <SearchBox history={history} />} />
             <Nav className='ml-auto pr-0' >
               <NavDropdown title="Rudraksha" id="basic-nav-dropdown" className='mr-3'>
@@ -184,8 +184,9 @@ const Header = () => {
 
 
               <LinkContainer to='/cart'>
-                <Nav.Link>
-                  <i className='fas fa-shopping-cart'></i> Cart
+                <Nav.Link title='Cart' id="basic-nav-dropdown" >
+                  <i className='fas fa-shopping-cart'></i>
+                   Cart
                 </Nav.Link>
               </LinkContainer>
               {userInfo ? (
@@ -219,7 +220,7 @@ const Header = () => {
                 )
               ) : (
                 <LinkContainer to='/login'>
-                  <Nav.Link className='signin-text'>
+                  <Nav.Link  className='signin-text'>
                     <i className='fas fa-user'></i> Sign In
                   </Nav.Link>
                 </LinkContainer>

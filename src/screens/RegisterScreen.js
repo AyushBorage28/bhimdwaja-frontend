@@ -40,6 +40,7 @@ const RegisterScreen = ({ location, history }) => {
   }
 
   return (
+    <Container className="py-3" fluid>
     <FormContainer>
       <h1>Sign Up</h1>
       {message && <Message variant='danger'>{message}</Message>}
@@ -112,6 +113,7 @@ const RegisterScreen = ({ location, history }) => {
         </Col>
       </Row>
     </FormContainer>
+    </Container>
   )
 }
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Form, Button, Col } from 'react-bootstrap'
+import { Form, Button, Col, Container } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import FormContainer from '../components/FormContainer'
 import CheckoutSteps from '../components/CheckoutSteps'
@@ -26,7 +26,8 @@ const PaymentScreen = ({ history }) => {
 
   useScrollToTop()
 
-  return (
+  return (  <Container className="py-3" fluid>
+
     <FormContainer>
       <CheckoutSteps step1 step2 step3 />
       <h1>Payment Method</h1>
@@ -59,6 +60,7 @@ const PaymentScreen = ({ history }) => {
         </Button>
       </Form>
     </FormContainer>
+    </Container>
   )
 }
 

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { Row, Col, ListGroup, Image, Form, Button, Card } from 'react-bootstrap'
+import { Row, Col, ListGroup, Image, Form, Button, Card, Container } from 'react-bootstrap'
 import Message from '../components/Message'
 import { addToCart, removeFromCart } from '../actions/cartActions'
 import useScrollToTop from '../components/ScrollToTop'
@@ -33,6 +33,7 @@ const CartScreen = ({ match, location, history }) => {
   }
 
   return (
+    <Container className="py-3" fluid>
     <Row>
       <Col md={8}>
         <h1>Shopping Cart</h1>
@@ -111,6 +112,7 @@ const CartScreen = ({ match, location, history }) => {
         </Card>
       </Col>
     </Row>
+    </Container>
   )
 }
 

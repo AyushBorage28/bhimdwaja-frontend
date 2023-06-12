@@ -1,9 +1,10 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const TandCScreen = () => {
   return (
-    <>
+    <Container className="py-3" fluid>
     
     <Link to='/' className='btn btn-light my-3'>
         Go Back
@@ -40,7 +41,7 @@ const TandCScreen = () => {
 <p style={{color: '#000000'}} ><strong>9. CHANGES TO TERMS AND CONDITIONS:</strong></p>
 <p style={{color: '#000000'}} ><strong>We reserve the right to update or modify these terms and conditions at any time without prior notice. Your use of Bhimdhwaja website and the purchase of our products after any such changes constitutes your acceptance of the new terms and conditions.</strong></p>
 </div>
-    </>
+    </Container>
   )
 }
 

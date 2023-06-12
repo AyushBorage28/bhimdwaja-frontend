@@ -1,10 +1,10 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import { Card, Container } from 'react-bootstrap'
 import Accordion from 'react-bootstrap/Accordion'
 
 const FAQsScreen = () => {
     return (
-        <>
+        <Container className="py-3" fluid>
             <h1 className='text-center pt-4'>Frequently Asked Questions</h1>
 
             <div className='container p-3 faqs-container' style={{ color: 'black' }}>
@@ -18,7 +18,7 @@ const FAQsScreen = () => {
 
                                 The association of Rudraksha with Hinduism dates back thousands of years, and it has played a pivotal role in various religious practices. In ancient texts, such as the Puranas and Upanishads, Rudraksha is mentioned as a divine gift bestowed upon humanity by Lord Shiva himself.
 
-                               </Card.Body>
+                            </Card.Body>
                         </Accordion.Collapse>
                     </Card>
                     <Card>
@@ -28,7 +28,7 @@ const FAQsScreen = () => {
                         <Accordion.Collapse eventKey="1">
                             <Card.Body className='faqs-body-text'>Wearing Rudraksha beads has been attributed to a multitude of benefits that extend beyond their spiritual significance. These mystical seeds have gained popularity for their potential positive impact on various aspects of an individual's well-being. One of the key advantages associated with Rudraksha is its ability to enhance concentration and focus. Many practitioners believe that wearing Rudraksha beads close to the skin stimulates the mind and promotes clarity of thought, making it a favored accessory during meditation and study sessions.
 
-                                </Card.Body>
+                            </Card.Body>
                         </Accordion.Collapse>
                     </Card>
                     <Card>
@@ -38,7 +38,7 @@ const FAQsScreen = () => {
                         <Accordion.Collapse eventKey="2">
                             <Card.Body className='faqs-body-text'>Gems, those exquisite natural minerals and stones renowned for their captivating beauty, have captivated humanity for centuries. These precious treasures, found deep within the Earth's crust, hold immense value not only for their aesthetic allure but also for their perceived healing and therapeutic properties.
 
-                                </Card.Body>
+                            </Card.Body>
                         </Accordion.Collapse>
                     </Card>
                     <Card>
@@ -93,7 +93,7 @@ const FAQsScreen = () => {
                     </Card>
                 </Accordion>
             </div>
-        </>
+        </Container>
     )
 }
 

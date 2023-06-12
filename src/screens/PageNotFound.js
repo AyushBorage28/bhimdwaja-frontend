@@ -1,7 +1,9 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 
 const PageNotFound = () => {
   return (
+    <Container className="py-3" fluid>
     <div id="notfound">
       <div class="notfound">
         <div class="notfound-404">
@@ -11,6 +13,7 @@ const PageNotFound = () => {
         <a href="/">Go TO Homepage</a>
       </div>
     </div>
+    </Container>
   )
 }
 

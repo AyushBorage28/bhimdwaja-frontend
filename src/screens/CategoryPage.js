@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import Category from '../components/Category';
 import Meta from '../components/Meta';
 import useScrollToTop from '../components/ScrollToTop';
@@ -13,7 +13,7 @@ const CategoryPage = ({ match }) => {
   const isProductPage = match.path.startsWith('/products');
 
   return (
-    <>
+    <Container className="py-3" fluid>
       <Meta />
       <Link to='/' className='btn btn-light'>
         Go Back
@@ -28,7 +28,7 @@ const CategoryPage = ({ match }) => {
           ))}
         </Row>
       )}
-    </>
+    </Container>
   );
 };
 

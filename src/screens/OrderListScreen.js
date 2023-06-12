@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { LinkContainer } from 'react-router-bootstrap'
-import { Table, Button } from 'react-bootstrap'
+import { Table, Button, Container } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
@@ -27,7 +27,7 @@ const OrderListScreen = ({ history }) => {
   }, [dispatch, history, userInfo])
 
   return (
-    <>
+    <Container className="py-3" fluid>
       <h1>Orders</h1>
       {loading ? (
         <Loader />
@@ -79,7 +79,7 @@ const OrderListScreen = ({ history }) => {
           </tbody>
         </Table>
       )}
-    </>
+    </Container>
   )
 }
 
