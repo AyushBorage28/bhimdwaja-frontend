@@ -1,7 +1,8 @@
 import React from "react";
-import GoogleMapReact from 'google-map-react';
+import { Link } from 'react-router-dom'
+// import GoogleMapReact from 'google-map-react';
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+// const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 export default function SimpleMap(){
   const defaultProps = {
@@ -15,6 +16,9 @@ export default function SimpleMap(){
   return (
     
     <>
+    <Link to='/' className='btn btn-light my-3'>
+        Go Back
+      </Link>
     <div className=" container w-75 p-3" >
       <h1>Contact Us</h1>
       <h5>Pune Office:</h5>

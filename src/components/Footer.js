@@ -92,16 +92,16 @@ const Footer = () => {
                       <a href="#!" class="text-black">Blogs</a>
                     </li>
                     <li>
-                      <a href="#!" class="text-black">Shipping & Returns</a>
+                      <a href="/shipping-and-return" class="text-black">Shipping & Returns</a>
                     </li>
                     <li>
-                      <a href="#!" class="text-black">Contact Us</a>
+                      <a href="/contact-us" class="text-black">Contact Us</a>
                     </li>
                   </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase">Our Brands</h5>
+                  <h5 class="text-uppercase">Our Brand</h5>
 
                   <ul class="list-unstyled mb-0">
                     <li>

@@ -30,6 +30,7 @@ import PageNotFound from "./screens/PageNotFound";
 import SearchScreen from "./screens/SearchScreen";
 import PrivacyPolicyScreen from "./screens/PrivacyPolicyScreen";
 import SimpleMap from "./screens/ContactUs";
+import ShippingAndReturn from "./screens/ShippingAndReturn";
 
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -55,6 +56,7 @@ const App = () => {
               <Route path="/faqs" component={FAQsScreen} />
               <Route path="/customization" component={CustomizationScreen} />
               <Route path="/contact-us" component={SimpleMap} />
+              <Route path="/shipping-and-return" component={ShippingAndReturn} />
               <Route path="/energization" component={EnergizationScreen} />
               <Route path="/privacy-policy" component={PrivacyPolicyScreen} />
               <Route path="/profile" component={ProfileScreen} />
