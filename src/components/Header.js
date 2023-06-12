@@ -147,18 +147,18 @@ const Header = () => {
                     </tr>
                     <tr>
                       <td style={{ paddingRight: 15, paddingBottom: 5 }} className='category-link' >
-                        <a href='/category/gaurishankar-mukhi' style={{ textDecoration: 'none' }}>Gauri Shankar</a>
+                        <a href='/category/gauri-shankar' style={{ textDecoration: 'none' }}>Gauri Shankar</a>
                       </td>
                       <td style={{ paddingRight: 15, paddingBottom: 5 }} className='category-link' >
-                        <a href='/category/trijutirudraksha' style={{ textDecoration: 'none' }}>Trijuti Rudraksha</a>
+                        <a href='/category/trijuti-rudraksha' style={{ textDecoration: 'none' }}>Trijuti Rudraksha</a>
                       </td>
                     </tr>
                     <tr>
                       <td style={{ paddingRight: 15, paddingBottom: 5 }} className='category-link' >
-                        <a href='/category/ganesh-mukhi' style={{ textDecoration: 'none' }}>Ganesh</a>
+                        <a href='/category/ganesha-rudraksha' style={{ textDecoration: 'none' }}>Ganesha</a>
                       </td>
                       <td style={{ paddingRight: 15, paddingBottom: 5 }} className='category-link' >
-                        <a href='/category/gorbhagauri' style={{ textDecoration: 'none' }}>Gorbha Gauri</a>
+                        <a href='/category/garbha-gauri-rudraksha' style={{ textDecoration: 'none' }}>Garbha Gauri</a>
                       </td>
                     </tr>
                   </tbody>
@@ -166,10 +166,10 @@ const Header = () => {
               </NavDropdown>
 
 
-              <Nav.Link className=' ml-0 pl-0 ' title="Gems" id="basic-nav-dropdown" onClick={() => { history.push("/category/Gems") }}>Gems
+              <Nav.Link className=' ml-0 pl-0 ' title="Gems" id="basic-nav-dropdown" onClick={() => { history.push("/category/gems") }}>Gems
               </Nav.Link>
 
-              <Nav.Link title="Malas" id="basic-nav-dropdown" className='mr-3' onClick={() => { history.push("/category/Malas") }}>Mala
+              <Nav.Link title="Malas" id="basic-nav-dropdown" className='mr-3' onClick={() => { history.push("/category/rudraksha-mala") }}>Mala
               </Nav.Link>
 
 
@@ -223,10 +223,3 @@ const Header = () => {
 }
 
 export default Header
-
-
-
-
-
-
-

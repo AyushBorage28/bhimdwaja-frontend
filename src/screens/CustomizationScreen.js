@@ -24,6 +24,10 @@ const CustomizationScreen = () => {
 
 <li>In addition to our specialization in customized rudraksha jewelry, we also offer a wide range of customization options for rings, pendants, and necklaces. Whether you desire a statement piece or a subtle accent, our team is dedicated to translating your vision into reality. Together, let's create a masterpiece that resonates with your unique style and personality.</li><br />
 </ul></strong></p>
+<img src="https://bhidhwaja-images.s3.amazonaws.com/Website+Images/customization-image-1.jpeg" alt="Customization Image" className='mx-2'/>
+<img src="https://bhidhwaja-images.s3.amazonaws.com/Website+Images/customization-image-2.jpeg" alt="Customization Image" className='mx-2'/>
+<img src="https://bhidhwaja-images.s3.amazonaws.com/Website+Images/customization-image-3.jpeg" alt="Customization Image" className='mx-2'/>
+<img src="https://bhidhwaja-images.s3.amazonaws.com/Website+Images/customization-image-4.jpeg" alt="Customization Image" className='mx-2'/>
       </div>
     </>
   )
