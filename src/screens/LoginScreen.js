@@ -48,7 +48,7 @@ const LoginScreen = ({ location, history }) => {
           <Form.Label>Phone Number</Form.Label>
           <Form.Control
             type='phone'
-            placeholder='Enter phone number'
+            placeholder='+91 | Enter phone number'
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
           ></Form.Control>
