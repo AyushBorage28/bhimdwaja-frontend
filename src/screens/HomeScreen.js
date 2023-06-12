@@ -28,7 +28,7 @@ const HomeScreen = ({ match }) => {
   }, [dispatch, keyword, pageNumber])
 
   return (
-    <div fluid>
+    <>
       <Meta />
       {!keyword ? (
         <ProductCarousel />
@@ -125,7 +125,7 @@ const HomeScreen = ({ match }) => {
           <FAQsScreen />
         </>
       )}
-    </div>
+    </>
   )
 }
 
