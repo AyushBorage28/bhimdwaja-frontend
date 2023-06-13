@@ -199,10 +199,7 @@ h2 {
 
 .card-img-top:hover {
   transform: scale(1.05);
-  
 }
-
-
 
 .category-card {
   width: 20rem;
@@ -214,19 +211,14 @@ h2 {
   justify-content: center;
 }
 
-
-
-
 .card:hover .homescreen-title {
   color: #f4791a;
 }
 
-
-.homescreen-title{
+.homescreen-title {
   font-size: 1rem;
   text-align: center;
 }
-
 
 .card-title,
 .card-body {
@@ -236,12 +228,11 @@ h2 {
 }
 
 @media screen and (max-width: 767px) {
-  .homescreen-title{
-    font-family: 'Poppins';
+  .homescreen-title {
+    font-family: "Poppins";
     font-size: 0.5rem;
     text-align: center;
     padding: 0 0.2rem;
-
   }
 
   .title-rudraksha {
@@ -414,4 +405,97 @@ h2 {
     padding: 7px 15px;
     font-size: 14px;
   }
+}
+.logo-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  animation: fade-in 2s ease-in forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.logo {
+  position: relative;
+  animation: logo-appear 2s ease-in-out forwards;
+}
+
+@keyframes logo-appear {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.shine {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, transparent 100%);
+  opacity: 0;
+  transform: translateX(100%);
+  animation: shine 2s 0.8s ease-in-out forwards;
+}
+
+@keyframes shine {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0%);
+  }
+}
+
+.logo-loader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #FFe8d6 10%, #ffffff 50%, #FFe8d6 90%);
+  background-size: 100% 200%;
+  animation: animated-background 8s linear infinite;
+  z-index: -1;
+}
+
+@keyframes animated-background {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+.logo-loader img {
+  width: 200px;
+  height: 200px;
 }
