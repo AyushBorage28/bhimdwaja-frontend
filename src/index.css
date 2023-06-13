@@ -199,8 +199,10 @@ h2 {
 
 .card-img-top:hover {
   transform: scale(1.05);
-  color: #f4791a;
+  
 }
+
+
 
 .category-card {
   width: 20rem;
@@ -212,32 +214,25 @@ h2 {
   justify-content: center;
 }
 
-.best-selling-card {
-  width: 17rem;
-  /* border: 1px solid #25d366 ; */
-}
 
-.best-selling-card > .card-img-top :hover {
-  transform: none;
-}
 
-.best-selling-card:hover {
+
+.card:hover .homescreen-title {
   color: #f4791a;
 }
 
-.category-card:hover {
-  color: #f4791a;
-}
 
 .homescreen-title{
   font-size: 1rem;
   text-align: center;
 }
 
+
 .card-title,
 .card-body {
   text-align: center;
   font-size: 1rem;
+  padding: 1.25rem 0;
 }
 
 @media screen and (max-width: 767px) {
