@@ -52,7 +52,7 @@ const App = () => {
     const handleLoad = () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 4000);
+      }, 2000);
     };
 
     window.addEventListener("scroll", handleScroll);
