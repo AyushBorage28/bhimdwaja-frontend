@@ -27,7 +27,7 @@ const PaymentScreen = ({ history }) => {
   useScrollToTop();
 
   return (
-    <Container className="py-3" fluid>
+    <Container className="py-3 content-container" fluid>
       <FormContainer>
         <CheckoutSteps step1 step2 step3 />
         <h1>Payment Method</h1>

@@ -4,7 +4,7 @@ import Accordion from 'react-bootstrap/Accordion'
 
 const FAQsScreen = () => {
     return (
-        <Container className="py-3" fluid>
+        <Container className="py-3 content-container" fluid>
             <h1 className='text-center pt-4'>Frequently Asked Questions</h1>
 
             <div className='container p-3 faqs-container' style={{ color: 'black' }}>

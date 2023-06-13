@@ -74,7 +74,7 @@ const ProductListScreen = ({ history, match }) => {
   }
 
   return (
-    <Container className="py-3" fluid>
+    <Container className="py-3 content-container" fluid>
       <Row className='align-items-center'>
         <Col>
           <h1>Products</h1>
@@ -106,7 +106,7 @@ const ProductListScreen = ({ history, match }) => {
                 <th></th>
               </tr>
             </thead>
-            <tbody style={{color: 'black'}}>
+            <tbody style={{ color: 'black' }}>
               {products.map((product) => (
                 <tr key={product._id}>
                   <td>{product._id}</td>

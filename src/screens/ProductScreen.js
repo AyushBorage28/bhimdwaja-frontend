@@ -44,7 +44,7 @@ const ProductScreen = ({ history, match }) => {
       dispatch(listProductDetails(match.params.id))
       dispatch({ type: PRODUCT_CREATE_REVIEW_RESET })
     }
-  }, [dispatch, match, successProductReview,product])
+  }, [dispatch, match, successProductReview, product])
 
   const addToCartHandler = () => {
     history.push(`/cart/${match.params.id}?qty=${qty}`)
@@ -61,7 +61,7 @@ const ProductScreen = ({ history, match }) => {
   }
 
   return (
-    <Container className="py-3" fluid>
+    <Container className="py-3 content-container" fluid>
       {/* <Link className='btn btn-light my-3' to='/'>
         Go Back
       </Link> */}

@@ -104,7 +104,7 @@ const OrderScreen = ({ match, history }) => {
   ) : error ? (
     <Message variant='danger'>{error}</Message>
   ) : (
-    <Container className="py-3" fluid>
+    <Container className="py-3 content-container" fluid>
       <h1>Order {order._id}</h1>
       <Row>
         <Col md={8}>
@@ -233,7 +233,7 @@ const OrderScreen = ({ match, history }) => {
               ) : (
                 <ListGroup.Item>
                   <Button
-                  disabled>Order Placed</Button>
+                    disabled>Order Placed</Button>
                 </ListGroup.Item>
               )}
 

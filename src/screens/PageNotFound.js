@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap'
 
 const PageNotFound = () => {
   return (
-    <Container className="py-3" fluid>
+    <Container className="py-3 content-container" fluid>
       <div id="notfound">
         <div className="notfound">
           <div className="notfound-404">

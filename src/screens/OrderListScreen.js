@@ -27,7 +27,7 @@ const OrderListScreen = ({ history }) => {
   }, [dispatch, history, userInfo])
 
   return (
-    <Container className="py-3" fluid>
+    <Container className="py-3 content-container" fluid>
       <h1>Orders</h1>
       {loading ? (
         <Loader />

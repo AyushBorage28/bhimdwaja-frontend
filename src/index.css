@@ -2,14 +2,14 @@
 
 body {
   margin: 0;
-  font-family:  "Lato", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family:  "Lato", "Courier New", monospace;
+  font-family: "Lato", "Courier New", monospace;
 }
 
 .container {
@@ -412,5 +412,3 @@ h2 {
     font-size: 14px;
   }
 }
-
-

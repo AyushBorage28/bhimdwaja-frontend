@@ -10,42 +10,42 @@ import Message from '../components/Message'
 import Loader from '../components/Loader'
 
 const SearchScreen = ({ match }) => {
-    const keyword = match.params.keyword
-    const category = match.params.category
-    const pageNumber = match.params.pageNumber || 1
-  
-    const dispatch = useDispatch()
-  
-    const productList = useSelector((state) => state.productList)
-    const { loading, error, products } = productList
-  
-    useScrollToTop()
-  
-    useEffect(() => {
-      dispatch(listProducts(keyword, category, pageNumber))
-    }, [dispatch, keyword, category, pageNumber])
-  
+  const keyword = match.params.keyword
+  const category = match.params.category
+  const pageNumber = match.params.pageNumber || 1
+
+  const dispatch = useDispatch()
+
+  const productList = useSelector((state) => state.productList)
+  const { loading, error, products } = productList
+
+  useScrollToTop()
+
+  useEffect(() => {
+    dispatch(listProducts(keyword, category, pageNumber))
+  }, [dispatch, keyword, category, pageNumber])
+
   return (
-    <Container className="py-3" fluid>
-    <Meta />
+    <Container className="py-3 content-container" fluid>
+      <Meta />
       <Link to='/' className='btn btn-light'>
         Go Back
       </Link>
-        <h1>Search for: "{keyword}"</h1>
-        <h1>Products</h1>
-        {loading ? (
+      <h1>Search for: "{keyword}"</h1>
+      <h1>Products</h1>
+      {loading ? (
         <Loader />
-      ) : error? (
+      ) : error ? (
         <Message variant='danger'>{error}</Message>
-      ) : !products? (
+      ) : !products ? (
         <Message variant='danger'>No Products found! Try using different keyword.</Message>
-      ):(
+      ) : (
         <Row>
-            {products.map((product) => (
-              <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
-                <Product product={product} />
-              </Col>
-            ))}
+          {products.map((product) => (
+            <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
+              <Product product={product} />
+            </Col>
+          ))}
         </Row>
       )}
     </Container>

@@ -44,7 +44,7 @@ const ShippingScreen = ({ history }) => {
 
 
   return (
-    <Container className="py-3" fluid>
+    <Container className="py-3 content-container" fluid>
       <FormContainer>
         <CheckoutSteps step1 step2 />
         <h1>Shipping</h1>

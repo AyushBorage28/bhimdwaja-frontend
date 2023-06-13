@@ -58,59 +58,63 @@ const App = () => {
   return (
     <CategoryContext.Provider value={{ selectedCategory, setSelectedCategory }}>
       <Router>
-        <Header />
+      <div style={{ position: "relative", minHeight: "100vh" }}>
+          
+            <Header />
+            <div style={{ paddingBottom: "60px" }}>
+              <Switch>
+                <Route path="/order/:id" component={OrderScreen} />
+                <Route path="/shipping" component={ShippingScreen} />
+                <Route path="/payment" component={PaymentScreen} />
+                <Route path="/placeorder" component={PlaceOrderScreen} />
+                <Route path="/login" component={LoginScreen} />
+                <Route path="/category/:category" component={ProductPage} />
+                <Route path="/categories" component={CategoryPage} />
+                <Route path="/register" component={RegisterScreen} />
+                <Route path="/verifyotp" component={VerifyOtpScreen} />
+                <Route path="/terms-and-conditions" component={TandCScreen} />
+                <Route path="/faqs" component={FAQsScreen} />
+                <Route path="/customization" component={CustomizationScreen} />
+                <Route path="/contact-us" component={SimpleMap} />
+                <Route path="/shipping-and-return" component={ShippingAndReturn} />
+                <Route path="/energization" component={EnergizationScreen} />
+                <Route path="/privacy-policy" component={PrivacyPolicyScreen} />
+                <Route path="/profile" component={ProfileScreen} />
+                <Route path="/product/:id" component={ProductScreen} />
+                <Route path="/cart/:id?" component={CartScreen} />
+                <Route path="/admin/userlist" component={UserListScreen} />
+                <Route path="/admin/user/:id/edit" component={UserEditScreen} />
+                <Route
+                  path="/admin/productlist"
+                  component={ProductListScreen}
+                  exact
+                />
+                <Route
+                  path="/admin/productlist/:pageNumber"
+                  component={ProductListScreen}
+                  exact
+                />
+                <Route
+                  path="/admin/product/:id/edit"
+                  component={ProductEditScreen}
+                />
+                <Route path="/admin/orderlist" component={OrderListScreen} />
+                <Route path="/search/:keyword" component={SearchScreen} exact />
 
-        <Switch>
-          <Route path="/order/:id" component={OrderScreen} />
-          <Route path="/shipping" component={ShippingScreen} />
-          <Route path="/payment" component={PaymentScreen} />
-          <Route path="/placeorder" component={PlaceOrderScreen} />
-          <Route path="/login" component={LoginScreen} />
-          <Route path="/category/:category" component={ProductPage} />
-          <Route path="/categories" component={CategoryPage} />
-          <Route path="/register" component={RegisterScreen} />
-          <Route path="/verifyotp" component={VerifyOtpScreen} />
-          <Route path="/terms-and-conditions" component={TandCScreen} />
-          <Route path="/faqs" component={FAQsScreen} />
-          <Route path="/customization" component={CustomizationScreen} />
-          <Route path="/contact-us" component={SimpleMap} />
-          <Route path="/shipping-and-return" component={ShippingAndReturn} />
-          <Route path="/energization" component={EnergizationScreen} />
-          <Route path="/privacy-policy" component={PrivacyPolicyScreen} />
-          <Route path="/profile" component={ProfileScreen} />
-          <Route path="/product/:id" component={ProductScreen} />
-          <Route path="/cart/:id?" component={CartScreen} />
-          <Route path="/admin/userlist" component={UserListScreen} />
-          <Route path="/admin/user/:id/edit" component={UserEditScreen} />
-          <Route
-            path="/admin/productlist"
-            component={ProductListScreen}
-            exact
-          />
-          <Route
-            path="/admin/productlist/:pageNumber"
-            component={ProductListScreen}
-            exact
-          />
-          <Route
-            path="/admin/product/:id/edit"
-            component={ProductEditScreen}
-          />
-          <Route path="/admin/orderlist" component={OrderListScreen} />
-          <Route path="/search/:keyword" component={SearchScreen} exact />
-
-          {/* <Route
+                {/* <Route
                 path="/search/:keyword/page/:pageNumber"
                 component={HomeScreen}
                 exact
               /> */}
-          <Route path="/page/:pageNumber" component={HomeScreen} exact />
-          <Route path="/" component={HomeScreen} exact />
-          <Route component={PageNotFound} />
-        </Switch>
-        <ProgressBar now={scrollProgress} style={{ width: '100%', height: '2px', backgroundColor: '#b27b23' }} className="fixed-top" variant="warning" />
-        <div style={{ marginTop: '2px' }}></div>
-        <Footer />
+                <Route path="/page/:pageNumber" component={HomeScreen} exact />
+                <Route path="/" component={HomeScreen} exact />
+                <Route component={PageNotFound} />
+              </Switch>
+              <ProgressBar now={scrollProgress} style={{ width: '100%', height: '2px', backgroundColor: '#b27b23' }} className="fixed-top" variant="warning" />
+              <div style={{ marginTop: '2px' }}></div>
+            </div>
+          </div>
+          <Footer style={{ position: "absolute", bottom: 0, width: "100%" }} />
       </Router>
     </CategoryContext.Provider>
   );

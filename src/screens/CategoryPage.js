@@ -13,7 +13,7 @@ const CategoryPage = ({ match }) => {
   const isProductPage = match.path.startsWith('/products');
 
   return (
-    <Container className="py-3" fluid>
+    <Container className="py-3 content-container" fluid>
       <Meta />
       <Link to='/' className='btn btn-light'>
         Go Back

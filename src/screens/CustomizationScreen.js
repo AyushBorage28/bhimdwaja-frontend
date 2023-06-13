@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const CustomizationScreen = () => {
   return (
-    <Container className="py-3" fluid>
+    <Container className="py-3 content-container" fluid>
       <Link to="/" className="btn btn-light my-3">
         Go Back
       </Link>

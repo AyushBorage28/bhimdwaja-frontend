@@ -69,7 +69,7 @@ const PlaceOrderScreen = ({ history }) => {
   };
 
   return (
-    <Container className="py-3" fluid>
+    <Container className="py-3 content-container" fluid>
       <CheckoutSteps step1 step2 step3 step4 />
       <Row>
         <Col md={8}>

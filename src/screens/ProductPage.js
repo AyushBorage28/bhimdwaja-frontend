@@ -1,4 +1,4 @@
-import React, {  useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col, Container } from 'react-bootstrap'
@@ -32,7 +32,7 @@ const ProductPage = ({ match }) => {
   const categoryImageName = category ? category.toLowerCase() : '';
 
   return (
-    <Container className="py-3" fluid>
+    <Container className="py-3 content-container" fluid>
       <Meta />
       {!keyword ? (
         <img

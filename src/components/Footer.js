@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer>
 
-      <div className="container " style={{ backgroundColor: "#FFe8d6", marginTop:'7rem' }} >
+      <div className="container" style={{ backgroundColor: "#FFe8d6" }} >
 
 
         <footer className=" text-center text-black" style={{ fontWeight: '400' }}>
@@ -22,7 +22,7 @@ const Footer = () => {
               ><i className="fab fa-twitter"></i
               ></a>
 
-              <a className="btn btn-outline-dark btn-floating m-1" href="https://instagram.com/bhimdhwaja?igshid=NTc4MTIwNjQ2YQ==" role="button"
+              <a className="btn btn-outline-dark btn-floating m-1" href="https://instagram.com/bhimdhwaja?igshid=NTc4MTIwNjQ2YQ==" target='_blank' role="button"
               ><i className="fab fa-instagram"></i
               ></a>
 
@@ -32,7 +32,7 @@ const Footer = () => {
               ></a>
             </section>
 
-            <section className="mb-4 d-none d-md-block">
+            <section className="mb-4 ">
               <form action="">
 
                 <div className="row d-flex justify-content-center">
@@ -49,7 +49,7 @@ const Footer = () => {
 
                     <div className="form-outline form-white mb-4">
                       <input type="email" id="form5Example2" className="form-control" />
-                      <label className="form-label" htmlFor="form5Example2">Email address</label>
+                      <label className="form-label mt-2" htmlFor="form5Example2">Email address</label>
                     </div>
                   </div>
 

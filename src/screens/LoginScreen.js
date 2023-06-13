@@ -38,53 +38,53 @@ const LoginScreen = ({ location, history }) => {
   }
 
   return (
-    <Container className="py-3" fluid>
-    <FormContainer>
-      <h1>Sign In</h1>
-      {error && <Message variant='danger'>{error}</Message>}
-      {loading && <Loader />}
-      <Form onSubmit={submitPassword}>
+    <Container className="py-3 content-container" fluid>
+      <FormContainer>
+        <h1>Sign In</h1>
+        {error && <Message variant='danger'>{error}</Message>}
+        {loading && <Loader />}
+        <Form onSubmit={submitPassword}>
 
-        <Form.Group controlId='phone'>
-          <Form.Label>Phone Number</Form.Label>
-          <Form.Control
-            type='phone'
-            placeholder='+91 | Enter phone number'
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-          ></Form.Control>
-        </Form.Group>
+          <Form.Group controlId='phone'>
+            <Form.Label>Phone Number</Form.Label>
+            <Form.Control
+              type='phone'
+              placeholder='+91 | Enter phone number'
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+            ></Form.Control>
+          </Form.Group>
 
-        <Form.Group controlId='password'>
-          <Form.Label>Password</Form.Label>
-          <Form.Control
-            type='password'
-            placeholder='Enter password'
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          ></Form.Control>
-        </Form.Group>
+          <Form.Group controlId='password'>
+            <Form.Label>Password</Form.Label>
+            <Form.Control
+              type='password'
+              placeholder='Enter password'
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            ></Form.Control>
+          </Form.Group>
 
-        <div className="button-container">
-          <Button type="submit" variant="primary">
-            Login with password
-          </Button>
-          <Button variant="primary" onClick={submitHandler}>
-            Login with OTP
-          </Button>
-        </div>
+          <div className="button-container">
+            <Button type="submit" variant="primary">
+              Login with password
+            </Button>
+            <Button variant="primary" onClick={submitHandler}>
+              Login with OTP
+            </Button>
+          </div>
 
 
-      </Form>
-      <Row className='py-3'  >
-        <Col style={{fontWeight:'500'}}>
-          New Customer?{' '}
-          <Link to={redirect ? `/register?redirect=${redirect}` : '/register'} >
-            Register
-          </Link>
-        </Col>
-      </Row>
-    </FormContainer>
+        </Form>
+        <Row className='py-3'  >
+          <Col style={{ fontWeight: '500' }}>
+            New Customer?{' '}
+            <Link to={redirect ? `/register?redirect=${redirect}` : '/register'} >
+              Register
+            </Link>
+          </Col>
+        </Row>
+      </FormContainer>
     </Container>
   )
 }

@@ -35,7 +35,7 @@ const UserListScreen = ({ history }) => {
   }
 
   return (
-    <Container className="py-3" fluid>
+    <Container className="py-3 content-container" fluid>
       <h1>Users</h1>
       {loading ? (
         <Loader />

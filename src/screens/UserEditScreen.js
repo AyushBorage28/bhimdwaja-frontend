@@ -51,7 +51,7 @@ const UserEditScreen = ({ match, history }) => {
   }
 
   return (
-    <Container className="py-3" fluid>
+    <Container className="py-3 content-container" fluid>
       <Link to='/admin/userlist' className='btn btn-light my-3'>
         Go Back
       </Link>
