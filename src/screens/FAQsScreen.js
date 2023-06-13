@@ -21,9 +21,21 @@ const FAQsScreen = () => {
                             </Card.Body>
                         </Accordion.Collapse>
                     </Card>
+
+                    <Card>
+                        <Accordion.Toggle as={Card.Header} eventKey="2">
+                            Why Bhimdhwaja Rudraksha?
+                        </Accordion.Toggle>
+                        <Accordion.Collapse eventKey="2">
+                            <Card.Body className='faqs-body-text'>At Bhimdhwaja, we take immense pride in offering you the most exquisite and authentic Rudraksha beads. We guarantee uncompromising quality, sourcing beads directly from trusted suppliers. Our sacred Rudraksha seeds carry immense spiritual and healing properties. With a wide variety to choose from, our knowledgeable experts offer personalized guidance. Experience customer satisfaction through a seamless shopping journey and prompt support. Embrace the profound energy and ancient wisdom of our authentic and enchanting Rudraksha beads.
+
+                            </Card.Body>
+                        </Accordion.Collapse>
+                    </Card>
+
                     <Card>
                         <Accordion.Toggle as={Card.Header} eventKey="1">
-                            What are the benefits of wearing Rudraksha?
+                            Who should wear Rudraksha?
                         </Accordion.Toggle>
                         <Accordion.Collapse eventKey="1">
                             <Card.Body className='faqs-body-text'>Wearing Rudraksha beads has been attributed to a multitude of benefits that extend beyond their spiritual significance. These mystical seeds have gained popularity for their potential positive impact on various aspects of an individual's well-being. One of the key advantages associated with Rudraksha is its ability to enhance concentration and focus. Many practitioners believe that wearing Rudraksha beads close to the skin stimulates the mind and promotes clarity of thought, making it a favored accessory during meditation and study sessions.
@@ -31,16 +43,18 @@ const FAQsScreen = () => {
                             </Card.Body>
                         </Accordion.Collapse>
                     </Card>
-                    <Card>
-                        <Accordion.Toggle as={Card.Header} eventKey="2">
-                            What are Gems?
-                        </Accordion.Toggle>
-                        <Accordion.Collapse eventKey="2">
-                            <Card.Body className='faqs-body-text'>Gems, those exquisite natural minerals and stones renowned for their captivating beauty, have captivated humanity for centuries. These precious treasures, found deep within the Earth's crust, hold immense value not only for their aesthetic allure but also for their perceived healing and therapeutic properties.
 
-                            </Card.Body>
+
+
+                    <Card>
+                        <Accordion.Toggle as={Card.Header} eventKey="4">
+                            What Rudraksha should I wear?
+                        </Accordion.Toggle>
+                        <Accordion.Collapse eventKey="4">
+                            <Card.Body className='faqs-body-text'>Careful selection of Rudraksha is an essential step in your Rudraksha journey. Rudraksha is commonly selected based on Birth Chart analysis with careful consideration of the goals and aspirations of the individual. Bhimdhwaja offers a range of Rudraksha combinations curated by our Rudraksha experts based on Zodiac signs, Goals, and Aspirations or your current Maha Dasha. </Card.Body>
                         </Accordion.Collapse>
                     </Card>
+
                     <Card>
                         <Accordion.Toggle as={Card.Header} eventKey="3">
                             Can I wear Rudraksha and Gems together?
@@ -49,22 +63,17 @@ const FAQsScreen = () => {
                             <Card.Body className='faqs-body-text'>Yes, you can wear Rudraksha and gems together. In fact, many people believe that wearing a combination of Rudraksha and gems can enhance their benefits.</Card.Body>
                         </Accordion.Collapse>
                     </Card>
-                    <Card>
-                        <Accordion.Toggle as={Card.Header} eventKey="4">
-                            What is a Rudraksha Mala?
-                        </Accordion.Toggle>
-                        <Accordion.Collapse eventKey="4">
-                            <Card.Body className='faqs-body-text'>A Rudraksha Mala holds a significant place in spiritual practices, serving as a powerful tool for prayer and meditation. Consisting of a string of Rudraksha beads, this sacred accessory is commonly worn around the neck or wrapped around the wrist, symbolizing devotion and spiritual connection. The number of beads in a Rudraksha mala can vary, with commonly used counts being 108 or 54 beads, although other numbers are also prevalent.</Card.Body>
-                        </Accordion.Collapse>
-                    </Card>
-                    <Card>
+
+
+                    {/* <Card>
                         <Accordion.Toggle as={Card.Header} eventKey="5">
                             How do I know what size of Rudraksha or Gem to buy?
                         </Accordion.Toggle>
                         <Accordion.Collapse eventKey="5">
                             <Card.Body className='faqs-body-text'>The size of Rudraksha or gem you need depends on your personal preference and the purpose for which you are buying it. We provide detailed information about the size and properties of each of our products on our website to help you make an informed decision.</Card.Body>
                         </Accordion.Collapse>
-                    </Card>
+                    </Card> */}
+
                     <Card>
                         <Accordion.Toggle as={Card.Header} eventKey="6">
                             How do I take care of my Rudraksha or Gems?
@@ -78,9 +87,14 @@ const FAQsScreen = () => {
                             How long does shipping take?
                         </Accordion.Toggle>
                         <Accordion.Collapse eventKey="7">
-                            <Card.Body className='faqs-body-text'>We ship our products within three business days of receiving payment. Shipping times vary depending on your location, but typically take between 10-14 business days.</Card.Body>
+                            <Card.Body className='faqs-body-text'>
+                                We ship our products within three business days of receiving payment. Shipping times vary depending on your location, but typically take between 10-14 business days.
+                                <br/>
+                                    For more information, please check our <a href="/shipping-and-return" style={{color:'#f4791a'}}>Shipping and Returns Policy</a>.
+                            </Card.Body>
                         </Accordion.Collapse>
                     </Card>
+
                     <Card>
                         <Accordion.Toggle as={Card.Header} eventKey="8">
                             Can I cancel my order?
