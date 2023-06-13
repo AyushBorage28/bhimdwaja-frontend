@@ -32,7 +32,7 @@ const Footer = () => {
               ></a>
             </section>
 
-            <section className="">
+            <section className="mb-4 d-none d-md-block">
               <form action="">
 
                 <div className="row d-flex justify-content-center">
