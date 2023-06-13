@@ -306,11 +306,11 @@ h2 {
   background-color: #ffffff;
 }
 
-.accordion > .card > .card-header,
+/* .accordion > .card > .card-header,
 .accordion > .card > .card-body {
   display: flex;
   justify-content: center;
-}
+} */
 
 #notfound {
   position: relative;
