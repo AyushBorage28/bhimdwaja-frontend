@@ -89,6 +89,7 @@ h2 {
 
 .card {
   height: 85%;
+  border: none;
 }
 
 .img-wrapper {

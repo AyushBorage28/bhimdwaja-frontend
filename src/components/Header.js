@@ -64,7 +64,7 @@ const Header = () => {
                   <tbody style={{ textAlign: 'center' }}>
                     <tr>
                       <td style={{ paddingRight: 15, paddingBottom: 5 }}>
-                        <a href style={{ textDecoration: 'none', fontSize: 13, fontWeight: 700, color: 'black' }}>All Rudraksha</a>
+                        <a href='/' style={{ textDecoration: 'none', fontSize: 13, fontWeight: 700, color: 'black' }}>All Rudraksha</a>
                       </td>
                     </tr>
                     <tr>

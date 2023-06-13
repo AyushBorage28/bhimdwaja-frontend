@@ -5,8 +5,7 @@ import axios from 'axios';
 import { SERVER_URL } from '../config';
 import Message from '../components/Message';
 import { useDispatch, useSelector } from 'react-redux';
-import { USER_VERIFIED } from '../constants/userConstants';
-import { findUser, verifyUser } from '../actions/userActions';
+import {  verifyUser } from '../actions/userActions';
 import { Container } from 'react-bootstrap';
 
 function Otpinput({ history, location }) {
@@ -40,7 +39,7 @@ function Otpinput({ history, location }) {
 
     const _phone = location.search.split('phone=')[1].split('&')[0];
     setPhone(_phone);
-  }, [history, userInfo, redirect]);
+  }, [history, userInfo, redirect, location]);
 
   async function handleSubmit(event) {
     event.preventDefault();

@@ -49,22 +49,22 @@ const CustomizationScreen = () => {
         <div className="image-container">
           <img
             src="https://bhidhwaja-images.s3.amazonaws.com/Website+Images/customization-image-1.jpeg"
-            alt="Customization Image"
+            alt="Customization-example"
             className="custom-image"
           />
           <img
             src="https://bhidhwaja-images.s3.amazonaws.com/Website+Images/customization-image-2.jpeg"
-            alt="Customization Image"
+            alt="Customization-example"
             className="custom-image"
           />
           <img
             src="https://bhidhwaja-images.s3.amazonaws.com/Website+Images/customization-image-3.jpeg"
-            alt="Customization Image"
+            alt="Customization-example"
             className="custom-image"
           />
           <img
             src="https://bhidhwaja-images.s3.amazonaws.com/Website+Images/customization-image-4.jpeg"
-            alt="Customization Image"
+            alt="Customization-example"
             className="custom-image"
           />
         </div>
