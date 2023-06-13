@@ -52,7 +52,7 @@ const HomeScreen = ({ match }) => {
                   <img className="card-img-top" src="././images/gem.png" alt="Card cap" />
                 </a>
                 <div className="card-body">
-                  <h5 className="card-title" >Gems</h5>
+                  <h5 className=" homescreen-title" >Gems</h5>
                 </div>
               </div>
               <div className='card category-card col-4'>
@@ -60,7 +60,7 @@ const HomeScreen = ({ match }) => {
                   <img className="card-img-top" src="././images/rudraksha.png" alt="Card cap" href='/categories' />
                 </a>
                 <div className="card-body">
-                  <h5 className="card-title title-rudraksha" >Rudraksha</h5>
+                  <h5 className=" homescreen-title title-rudraksha" >Rudraksha</h5>
                 </div>
               </div>
               <div className='card category-card col-4'>
@@ -68,7 +68,7 @@ const HomeScreen = ({ match }) => {
                   <img className="card-img-top" src="././images/mala.png" alt="Card cap" />
                 </a>
                 <div className="card-body">
-                  <h5 className="card-title">Mala</h5>
+                  <h5 className=" homescreen-title">Mala</h5>
                 </div>
               </div>
             </div>
@@ -83,7 +83,7 @@ const HomeScreen = ({ match }) => {
                 <img className="card-img-top" src="././images/gaurishankar.png" alt="Card cap" />
               </a>
 
-              <h4 className="card-title" >gauri <br></br> shankar</h4>
+              <h4 className=" homescreen-title" >gauri <br></br> shankar</h4>
 
             </div>
             <div className='card best-selling-card'>
@@ -91,7 +91,7 @@ const HomeScreen = ({ match }) => {
                 <img className="card-img-top" src="././images/1-mukhi-savar.png" alt="Card cap" />
               </a>
 
-              <h4 className="card-title" >1 Mukhi Savar</h4>
+              <h4 className=" homescreen-title" >1 Mukhi Savar</h4>
 
             </div>
             <div className='card best-selling-card '>
@@ -99,7 +99,7 @@ const HomeScreen = ({ match }) => {
                 <img className="card-img-top" src="././images/ganesh.png" alt="Card cap" />
               </a>
 
-              <h4 className="card-title" >ganesh</h4>
+              <h4 className=" homescreen-title" >ganesh</h4>
 
             </div>
             <div className='card best-selling-card '>
@@ -107,7 +107,7 @@ const HomeScreen = ({ match }) => {
                 <img className="card-img-top" src="././images/6mukhi.png" alt="Card cap" />
               </a>
 
-              <h4 className="card-title" >6 mukhi</h4>
+              <h4 className=" homescreen-title" >6 mukhi</h4>
 
             </div>
             <div className='card best-selling-card  '>
@@ -115,7 +115,7 @@ const HomeScreen = ({ match }) => {
                 <img className="card-img-top" src="././images/11mukhi.png" alt="Card cap" />
               </a>
 
-              <h4 className="card-title" >11 mukhi</h4>
+              <h4 className=" homescreen-title" >11 mukhi</h4>
 
             </div>
 

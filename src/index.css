@@ -229,6 +229,11 @@ h2 {
   color: #f4791a;
 }
 
+.homescreen-title{
+  font-size: 1rem;
+  text-align: center;
+}
+
 .card-title,
 .card-body {
   text-align: center;
@@ -236,10 +241,13 @@ h2 {
 }
 
 @media screen and (max-width: 767px) {
-  /* .card-title,
-  .card-body {
-    font-size: 13px;
-  } */
+  .homescreen-title{
+    font-family: 'Poppins';
+    font-size: 0.5rem;
+    text-align: center;
+    padding: 0 0.2rem;
+
+  }
 
   .title-rudraksha {
     margin-left: -10px;
