@@ -236,10 +236,10 @@ h2 {
 }
 
 @media screen and (max-width: 767px) {
-  .card-title,
+  /* .card-title,
   .card-body {
-    font-size: 0.5rem;
-  }
+    font-size: 13px;
+  } */
 
   .title-rudraksha {
     margin-left: -10px;

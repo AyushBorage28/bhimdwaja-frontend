@@ -20,6 +20,8 @@ const CategoryPage = ({ match }) => {
       </Link>
 
       {!isProductPage && (
+        <>
+        <h1 className='text-center pt-4'>Collections of Rudraksha</h1>
         <Row>
           {category.map((category) => (
             <Col key={category.id} sm={12} md={6} lg={4} xl={3}>
@@ -27,6 +29,7 @@ const CategoryPage = ({ match }) => {
             </Col>
           ))}
         </Row>
+        </>
       )}
     </Container>
   );
