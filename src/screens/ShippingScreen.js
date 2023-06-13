@@ -27,19 +27,21 @@ const ShippingScreen = ({ history }) => {
 
 
   useEffect(() => {
-
     (async () => {
       try {
         const { data } = await Axios.get(`https://api.postalpincode.in/pincode/${postalCode}`);
-        console.log(data)
-        if (!data[0].PostOffice || data[0].PostOffice.length === 0) throw "Invalid Pincode";
-        setCity(data[0].PostOffice[0].Division)
+        console.log(data);
+        if (!data[0].PostOffice || data[0].PostOffice.length === 0) {
+          throw new Error("Invalid Pincode");
+        }
+        setCity(data[0].PostOffice[0].Division);
         setstate(data[0].PostOffice[0].State);
       } catch (err) {
         console.log(err);
       }
     })();
-  }, [postalCode])
+  }, [postalCode]);
+
 
   return (
     <Container className="py-3" fluid>

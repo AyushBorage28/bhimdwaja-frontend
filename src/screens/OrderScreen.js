@@ -80,19 +80,19 @@ const OrderScreen = ({ match, history }) => {
     }
   }, [dispatch, orderId, successPay, successDeliver, order])
 
-  const successPaymentHandler = (paymentResult) => {
-    // Update the order's payment status
-    order.isPaid = true;
-    order.paidAt = new Date().toISOString();
+  // const successPaymentHandler = (paymentResult) => {
+  //   // Update the order's payment status
+  //   order.isPaid = true;
+  //   order.paidAt = new Date().toISOString();
 
-    // Dispatch an action to update the order's payment status in the Redux store
-    dispatch({ type: 'ORDER_PAY_SUCCESS' });
-  };
+  //   // Dispatch an action to update the order's payment status in the Redux store
+  //   dispatch({ type: 'ORDER_PAY_SUCCESS' });
+  // };
 
 
-  const deliverHandler = () => {
-    dispatch(deliverOrder(order))
-  }
+  // const deliverHandler = () => {
+  //   dispatch(deliverOrder(order))
+  // }
 
   const markAsDeliveredHandler = () => {
     if (window.confirm('Are you sure you want to mark this order as delivered?')) {

@@ -199,7 +199,7 @@ export const updatePassword = (phone, password, redirectOnSuccess) => async (dis
 
     localStorage.setItem('userInfo', JSON.stringify(data))
   } catch (error) {
-    if (error?.response?.data?.message == "User not verified") {
+    if (error?.response?.data?.message === "User not verified") {
       redirectOnSuccess(phone);
     } else {
       dispatch({

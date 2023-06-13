@@ -1,4 +1,3 @@
-import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Form, Button, Container } from 'react-bootstrap'
@@ -10,7 +9,6 @@ import { listProductDetails, updateProduct } from '../actions/productActions'
 import { PRODUCT_UPDATE_RESET } from '../constants/productConstants'
 import categories from '../category'
 import useScrollToTop from '../components/ScrollToTop'
-import { SERVER_URL } from './../config'
 
 const ProductEditScreen = ({ match, history }) => {
   const productId = match.params.id

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link, useHistory } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import { Form, Button, Row, Col, Container } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
@@ -15,7 +15,6 @@ const RegisterScreen = ({ location, history }) => {
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
   const [message, setMessage] = useState(null)
-  const [otpGenerated, setOtpGenerated] = useState(false);
 
   const dispatch = useDispatch()
   const userRegister = useSelector((state) => state.userRegister)
