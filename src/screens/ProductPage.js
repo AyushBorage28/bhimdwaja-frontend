@@ -14,7 +14,7 @@ const ProductPage = ({ match }) => {
   const keyword = match.params.keyword
 
   const category = match.params.category
-  console.log(match)
+  // console.log(match)
   const pageNumber = match.params.pageNumber || 1
 
   const productList = useSelector((state) => state.productList)

@@ -89,7 +89,7 @@ export const loginViaPassword = (phone, password, redirectOnSuccess) => async (d
     redirectOnSuccess();
 
   } catch (error) {
-    console.log(error)
+    // console.log(error)
     dispatch({
       type: USER_LOGIN_FAIL,
       payload:
@@ -127,7 +127,7 @@ export const verifyUser = (phone, otp, redirectOnSuccess) => async (dispatch) =>
     redirectOnSuccess();
 
   } catch (error) {
-    console.log(error)
+    // console.log(error)
     dispatch({
       type: USER_LOGIN_FAIL,
       payload:

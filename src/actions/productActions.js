@@ -31,8 +31,8 @@ export const listProducts = (keyword = '', category = "", pageNumber = '') => as
   try {
     dispatch({ type: PRODUCT_LIST_REQUEST })
 
-    console.log(category)
-    console.log(`${SERVER_URL}/api/products?keyword=${keyword}&category=${category}&pageNumber=${pageNumber}`)
+    // console.log(category)
+    // console.log(`${SERVER_URL}/api/products?keyword=${keyword}&category=${category}&pageNumber=${pageNumber}`)
     const { data } = await axios.get(
       `${SERVER_URL}/api/products?keyword=${keyword}&category=${category}&pageNumber=${pageNumber}`
     )

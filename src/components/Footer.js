@@ -22,7 +22,7 @@ const Footer = () => {
               ><i className="fab fa-twitter"></i
               ></a>
 
-              <a className="btn btn-outline-dark btn-floating m-1" href="https://instagram.com/bhimdhwaja?igshid=NTc4MTIwNjQ2YQ==" target='_blank' role="button"
+              <a className="btn btn-outline-dark btn-floating m-1" href="https://instagram.com/bhimdhwaja?igshid=NTc4MTIwNjQ2YQ==" target='_blank' rel="noopener noreferrer" role="button"
               ><i className="fab fa-instagram"></i
               ></a>
 

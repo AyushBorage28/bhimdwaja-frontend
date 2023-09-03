@@ -70,7 +70,7 @@ function Otpinput({ history, location }) {
         elmnt.target.form.elements[next].focus();
       }
     } else {
-      console.log('next');
+      // console.log('next');
       const next = elmnt.target.tabIndex;
       if (next < 7) {
         elmnt.target.form.elements[next].focus();

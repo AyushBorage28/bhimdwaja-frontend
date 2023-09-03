@@ -1,20 +1,20 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Route, useHistory } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
 import SearchBox from './SearchBox'
 import { logout } from '../actions/userActions'
-import { CategoryContext } from '../context'
+// import { CategoryContext } from '../context'
 
 const Header = () => {
   const dispatch = useDispatch()
-  const categoryContext = useContext(CategoryContext)
+  // const categoryContext = useContext(CategoryContext)
   const userLogin = useSelector((state) => state.userLogin)
   const { userInfo } = userLogin
   const history = useHistory()
   const [isNavbarFixed, setIsNavbarFixed] = useState(false);
-  console.log(categoryContext);
+  // console.log(categoryContext);
   const logoutHandler = () => {
     dispatch(logout())
   }
@@ -50,9 +50,9 @@ const Header = () => {
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand>
-             
-                <img src="/Logo.png" width="125" height="35" alt='logo' ></img>
-              
+
+              <img src="/Logo.png" width="125" height="35" alt='logo' ></img>
+
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
@@ -186,7 +186,7 @@ const Header = () => {
               <LinkContainer to='/cart'>
                 <Nav.Link title='Cart' id="basic-nav-dropdown" >
                   <i className='fas fa-shopping-cart'></i>
-                   Cart
+                  Cart
                 </Nav.Link>
               </LinkContainer>
               {userInfo ? (
@@ -220,7 +220,7 @@ const Header = () => {
                 )
               ) : (
                 <LinkContainer to='/login'>
-                  <Nav.Link  className='signin-text'>
+                  <Nav.Link className='signin-text'>
                     <i className='fas fa-user'></i> Sign In
                   </Nav.Link>
                 </LinkContainer>

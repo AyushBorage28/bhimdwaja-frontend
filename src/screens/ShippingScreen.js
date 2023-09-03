@@ -30,14 +30,14 @@ const ShippingScreen = ({ history }) => {
     (async () => {
       try {
         const { data } = await Axios.get(`https://api.postalpincode.in/pincode/${postalCode}`);
-        console.log(data);
+        // console.log(data);
         if (!data[0].PostOffice || data[0].PostOffice.length === 0) {
           throw new Error("Invalid Pincode");
         }
         setCity(data[0].PostOffice[0].Division);
         setstate(data[0].PostOffice[0].State);
       } catch (err) {
-        console.log(err);
+        // console.log(err);
       }
     })();
   }, [postalCode]);
